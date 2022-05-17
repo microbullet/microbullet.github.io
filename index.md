@@ -90,7 +90,7 @@ boss_   or 6		  = Used to identify the king boss in the script
 
 all_   or 7		    = Used to identify all pieces in the script 
 
-leader_ or 8	 	  = Used to identify king or bishop in the script depending on theocracy  
+leader_ or 8	 	  = Used to identify the piece you need to kill (usually king, changes based on floor number or theocracy)
 ```
  
 
@@ -98,7 +98,9 @@ leader_ or 8	 	  = Used to identify king or bishop in the script depending on th
 ```
 need=<int> or need={<int>,<int>}  	= card requires specific pieces to appear 
 
-need_<special>				              = card requires a specfic special to appear 
+need_<special>=1				              = card requires a specfic special to appear 
+ 
+need_soul=<int>				              = card requires at least <int> soul slots to appear
 
 need_<variable>=<int> 			        = requires <variable> to equal <int> to appear 
 
@@ -162,17 +164,17 @@ ammo_regen=<int> 		        = increases the ammo you get from moving by <int>
 
 spread=<int>			          = increases the firing arc by <int> 
 
-special=” <special>”	      = gives the player the right click ability <special> 
+special=”<special>”	      = gives the player the right click ability <special> 
 
-soul_slot=<+int> 		        = increases the king’s soul slots by <+int> 
+soul_slot=<int> 		        = increases the king’s soul slots by <int> 
 
-soul_sink=<-Int> 		        = decreases the king’s soul slots by <-int> 
+soul_sink=<Int> 		        = decreases the king’s soul slots by <int> 
 
 firepower=<int> 		        = gain <int> firepower  
 
 pierce=<int> 		 	          = gain <int> pierce 
  
-steed=<int+> 		      = determines how many extra turns you get for killing a knight
+steed=<int> 		      = determines how many extra turns you get for killing a knight
 
 wand={<int>}			          = gain <int> wand, explained further 
 
@@ -194,13 +196,13 @@ flip_on=”contact”or”inner” 	= determines whether the card flips for spec
 
 <identifier>_cage=<int>	      = limits the <identifier> to <int> spaces of movement 
 
-<identifier>_tempo=<int>	    = increases the time between all <identifier>s moves 
+<identifier>_tempo=<int>	    = increases the time between all <identifier>s moves (can be negative)
 
 <identifier>_flying=<bool>	  = determines whether <identifier> can ignore obstacles 
 
-<identifier>_orth=<bool>	    = determines whether <identifier>s can move like queens 
+<identifier>_orth=<bool>	    = determines whether <identifier>s can move (not capture) like rooks
 
-<identifier>_joust=<bool> 	  = determines whether you get an extra turn for killing an <identifier>? 
+<identifier>_joust=<bool> 	  = determines whether you get an extra turn for killing an <identifier>
 
 <identifier>_poison=<int>	    = applies poison to all <identifier>’s for <int> turns 
 
@@ -219,6 +221,8 @@ flip_on=”contact”or”inner” 	= determines whether the card flips for spec
 
 `{[gid], [id], [n], [pwe], [effects]},` 
 
+Careful! You will need to add the ID of each card to your <language>.txt file.
+ 
 ## Difficulties 
 
 Difficulties are areas of play that determine how hard the game is.  
