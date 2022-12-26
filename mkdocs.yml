@@ -1,6 +1,15 @@
 site_name: My Docs
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
 name: ci 
 on:
   push:
