@@ -10,3 +10,5 @@ theme:
     - navigation.indexes
     - toc.integrate
     - navigation.top
+extra_css:
+  - stylesheets/extra.css
