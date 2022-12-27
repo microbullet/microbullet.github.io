@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-The weak should fear the strong
+No longer amongus
 
 ## Commands
 
