@@ -297,6 +297,3314 @@ base={
 }
 ```
 
+### Functions
+
+#### _draw
+
+Parameters:
+
+Usage:
+
+#### _flr
+
+Parameters:
+
+Usage:
+
+#### _init
+
+Parameters:
+
+Usage:
+
+#### _load
+
+Parameters:
+
+Usage:
+
+#### _log
+
+Parameters:
+
+Usage:
+
+#### _music
+
+Parameters:
+
+Usage:
+
+#### _pal
+
+Parameters:
+
+Usage:
+
+#### _sfx
+
+Parameters:
+
+Usage:
+
+#### _update
+
+Parameters:
+
+Usage:
+
+#### abort
+
+Parameters:
+
+Usage:
+
+#### abort_brutal
+
+Parameters:
+
+Usage:
+
+#### abs
+
+Parameters:
+
+Usage:
+
+#### ach_event
+
+Parameters:
+
+Usage:
+
+#### acos
+
+Parameters:
+
+Usage:
+
+#### act_menu
+
+Parameters:
+
+Usage:
+
+#### activate_scepter
+
+Parameters:
+
+Usage:
+
+#### activate_soul
+
+Parameters:
+
+Usage:
+
+#### add
+
+Parameters:
+
+Usage:
+
+#### add_card
+
+Parameters:
+
+Usage:
+
+#### add_child
+
+Parameters:
+
+Usage:
+
+#### add_event
+
+Parameters:
+
+Usage:
+
+#### add_indexes
+
+Parameters:
+
+Usage:
+
+#### add_scepter
+
+Parameters:
+
+Usage:
+
+#### add_soul
+
+Parameters:
+
+Usage:
+
+#### add_soul_slot
+
+Parameters:
+
+Usage:
+
+#### add_spawner
+
+Parameters:
+
+Usage:
+
+#### addfont
+
+Parameters:
+
+Usage:
+
+#### aft
+
+Parameters:
+
+Usage:
+
+#### all
+
+Parameters:
+
+Usage:
+
+#### all_bads
+
+Parameters:
+
+Usage:
+
+#### apal
+
+Parameters:
+
+Usage:
+
+#### apply_options
+
+Parameters:
+
+Usage:
+
+#### arand
+
+Parameters:
+
+Usage:
+
+#### asin
+
+Parameters:
+
+Usage:
+
+#### ask_card
+
+Parameters:
+
+Usage:
+
+#### ask_disrupt
+
+Parameters:
+
+Usage:
+
+#### aspr
+
+Parameters:
+
+Usage:
+
+#### assert
+
+Parameters:
+
+Usage:
+
+#### asspr
+
+Parameters:
+
+Usage:
+
+#### atan2
+
+Parameters:
+
+Usage:
+
+#### band
+
+Parameters:
+
+Usage:
+
+#### bank
+
+Parameters:
+
+Usage:
+
+#### bget
+
+Parameters:
+
+Usage:
+
+#### bind
+
+Parameters:
+
+Usage:
+
+#### black_mist_check
+
+Parameters:
+
+Usage:
+
+#### blade_hit
+
+Parameters:
+
+Usage:
+
+#### bnksize
+
+Parameters:
+
+Usage:
+
+#### bnot
+
+Parameters:
+
+Usage:
+
+#### boost
+
+Parameters:
+
+Usage:
+
+#### boot
+
+Parameters:
+
+Usage:
+
+#### bor
+
+Parameters:
+
+Usage:
+
+#### boss_turn
+
+Parameters:
+
+Usage:
+
+#### bprint
+
+Parameters:
+
+Usage:
+
+#### brd
+
+Parameters:
+
+Usage:
+
+#### bres
+
+Parameters:
+
+Usage:
+
+#### bres_2
+
+Parameters:
+
+Usage:
+
+#### bright
+
+Parameters:
+
+Usage:
+
+#### bset
+
+Parameters:
+
+Usage:
+
+#### btn
+
+Parameters:
+
+Usage:
+
+#### btnclr
+
+Parameters:
+
+Usage:
+
+#### btnp
+
+Parameters:
+
+Usage:
+
+#### btnr
+
+Parameters:
+
+Usage:
+
+#### btnv
+
+Parameters:
+
+Usage:
+
+#### build_stack
+
+Parameters:
+
+Usage:
+
+#### bxor
+
+Parameters:
+
+Usage:
+
+#### camera
+
+Parameters:
+
+Usage:
+
+#### carry_nearby_pieces
+
+Parameters:
+
+Usage:
+
+#### cd
+
+Parameters:
+
+Usage:
+
+#### ceil
+
+Parameters:
+
+Usage:
+
+#### changelog
+
+Parameters:
+
+Usage:
+
+#### check_cards_auto_flip
+
+Parameters:
+
+Usage:
+
+#### check_collections
+
+Parameters:
+
+Usage:
+
+#### check_condition
+
+Parameters:
+
+Usage:
+
+#### check_fatality
+
+Parameters:
+
+Usage:
+
+#### check_folly_shields
+
+Parameters:
+
+Usage:
+
+#### chk_achievement
+
+Parameters:
+
+Usage:
+
+#### chkinfo
+
+Parameters:
+
+Usage:
+
+#### chnlfx
+
+Parameters:
+
+Usage:
+
+#### chnlprog
+
+Parameters:
+
+Usage:
+
+#### chr
+
+Parameters:
+
+Usage:
+
+#### chunk
+
+Parameters:
+
+Usage:
+
+#### circ
+
+Parameters:
+
+Usage:
+
+#### circfill
+
+Parameters:
+
+Usage:
+
+#### clean_up
+
+Parameters:
+
+Usage:
+
+#### clip
+
+Parameters:
+
+Usage:
+
+#### clipboard
+
+Parameters:
+
+Usage:
+
+#### clone
+
+Parameters:
+
+Usage:
+
+#### close_menu
+
+Parameters:
+
+Usage:
+
+#### cls
+
+Parameters:
+
+Usage:
+
+#### color
+
+Parameters:
+
+Usage:
+
+#### colorize_piece
+
+Parameters:
+
+Usage:
+
+#### concat
+
+Parameters:
+
+Usage:
+
+#### controls
+
+Parameters:
+
+Usage:
+
+#### cos
+
+Parameters:
+
+Usage:
+
+#### crop_to
+
+Parameters:
+
+Usage:
+
+#### ctrlr
+
+Parameters:
+
+Usage:
+
+#### cub
+
+Parameters:
+
+Usage:
+
+#### custom_sort
+
+Parameters:
+
+Usage:
+
+#### cyc
+
+Parameters:
+
+Usage:
+
+#### dark_bishop_up
+
+Parameters:
+
+Usage:
+
+#### decay_up
+
+Parameters:
+
+Usage:
+
+#### defbtn
+
+Parameters:
+
+Usage:
+
+#### del
+
+Parameters:
+
+Usage:
+
+#### delbnk
+
+Parameters:
+
+Usage:
+
+#### delchk
+
+Parameters:
+
+Usage:
+
+#### delfnt
+
+Parameters:
+
+Usage:
+
+#### deli
+
+Parameters:
+
+Usage:
+
+#### delmus
+
+Parameters:
+
+Usage:
+
+#### delsfx
+
+Parameters:
+
+Usage:
+
+#### delsrf
+
+Parameters:
+
+Usage:
+
+#### delta
+
+Parameters:
+
+Usage:
+
+#### delwin
+
+Parameters:
+
+Usage:
+
+#### desktop_path
+
+Parameters:
+
+Usage:
+
+#### dirload
+
+Parameters:
+
+Usage:
+
+#### discord
+
+Parameters:
+
+Usage:
+
+#### disrupt
+
+Parameters:
+
+Usage:
+
+#### dist
+
+Parameters:
+
+Usage:
+
+#### dr_boss
+
+Parameters:
+
+Usage:
+
+#### dr_credits
+
+Parameters:
+
+Usage:
+
+#### dr_crosshair
+
+Parameters:
+
+Usage:
+
+#### dr_dark_bishop
+
+Parameters:
+
+Usage:
+
+#### dr_flip_card
+
+Parameters:
+
+Usage:
+
+#### dr_piece
+
+Parameters:
+
+Usage:
+
+#### draw_arms
+
+Parameters:
+
+Usage:
+
+#### draw_game
+
+Parameters:
+
+Usage:
+
+#### draw_icon
+
+Parameters:
+
+Usage:
+
+#### dre
+
+Parameters:
+
+Usage:
+
+#### dsq
+
+Parameters:
+
+Usage:
+
+#### dt
+
+Parameters:
+
+Usage:
+
+#### earn_extra_turn
+
+Parameters:
+
+Usage:
+
+#### ease_atk
+
+Parameters:
+
+Usage:
+
+#### ease_bounce_out
+
+Parameters:
+
+Usage:
+
+#### ease_flat
+
+Parameters:
+
+Usage:
+
+#### ease_in
+
+Parameters:
+
+Usage:
+
+#### ease_in_back
+
+Parameters:
+
+Usage:
+
+#### ease_in_out
+
+Parameters:
+
+Usage:
+
+#### ease_out
+
+Parameters:
+
+Usage:
+
+#### ease_out_back
+
+Parameters:
+
+Usage:
+
+#### ease_out_in
+
+Parameters:
+
+Usage:
+
+#### ease_uturn
+
+Parameters:
+
+Usage:
+
+#### end_game
+
+Parameters:
+
+Usage:
+
+#### end_level
+
+Parameters:
+
+Usage:
+
+#### endgif
+
+Parameters:
+
+Usage:
+
+#### error
+
+Parameters:
+
+Usage:
+
+#### escape
+
+Parameters:
+
+Usage:
+
+#### ev_backup
+
+Parameters:
+
+Usage:
+
+#### ev_promote
+
+Parameters:
+
+Usage:
+
+#### ev_raise_dead
+
+Parameters:
+
+Usage:
+
+#### ev_rat_atk
+
+Parameters:
+
+Usage:
+
+#### ev_reveal
+
+Parameters:
+
+Usage:
+
+#### ev_side_spawn
+
+Parameters:
+
+Usage:
+
+#### ev_spawn_item
+
+Parameters:
+
+Usage:
+
+#### ev_surrender
+
+Parameters:
+
+Usage:
+
+#### exe
+
+Parameters:
+
+Usage:
+
+#### execute
+
+Parameters:
+
+Usage:
+
+#### execution
+
+Parameters:
+
+Usage:
+
+#### execution_boss
+
+Parameters:
+
+Usage:
+
+#### execution_dark_bishop
+
+Parameters:
+
+Usage:
+
+#### execution_lancers
+
+Parameters:
+
+Usage:
+
+#### exhaust_card_with
+
+Parameters:
+
+Usage:
+
+#### expbnk
+
+Parameters:
+
+Usage:
+
+#### expfnt
+
+Parameters:
+
+Usage:
+
+#### export
+
+Parameters:
+
+Usage:
+
+#### export_icon_png
+
+Parameters:
+
+Usage:
+
+#### expsrf
+
+Parameters:
+
+Usage:
+
+#### fade_to
+
+Parameters:
+
+Usage:
+
+#### fast_tracker
+
+Parameters:
+
+Usage:
+
+#### fbrd
+
+Parameters:
+
+Usage:
+
+#### file
+
+Parameters:
+
+Usage:
+
+#### fillp
+
+Parameters:
+
+Usage:
+
+#### find
+
+Parameters:
+
+Usage:
+
+#### fire
+
+Parameters:
+
+Usage:
+
+#### flip
+
+Parameters:
+
+Usage:
+
+#### flip_card
+
+Parameters:
+
+Usage:
+
+#### flr
+
+Parameters:
+
+Usage:
+
+#### fntspec
+
+Parameters:
+
+Usage:
+
+#### folder
+
+Parameters:
+
+Usage:
+
+#### font
+
+Parameters:
+
+Usage:
+
+#### foreach
+
+Parameters:
+
+Usage:
+
+#### format
+
+Parameters:
+
+Usage:
+
+#### format_gameplay_datas
+
+Parameters:
+
+Usage:
+
+#### fps
+
+Parameters:
+
+Usage:
+
+#### fpslimit
+
+Parameters:
+
+Usage:
+
+#### freeze
+
+Parameters:
+
+Usage:
+
+#### fwait
+
+Parameters:
+
+Usage:
+
+#### fx_ascend
+
+Parameters:
+
+Usage:
+
+#### fx_cart
+
+Parameters:
+
+Usage:
+
+#### fx_crumb
+
+Parameters:
+
+Usage:
+
+#### fx_detect
+
+Parameters:
+
+Usage:
+
+#### fx_dust
+
+Parameters:
+
+Usage:
+
+#### fx_emote
+
+Parameters:
+
+Usage:
+
+#### fx_frame_drop
+
+Parameters:
+
+Usage:
+
+#### fx_screen_flash
+
+Parameters:
+
+Usage:
+
+#### fx_shield
+
+Parameters:
+
+Usage:
+
+#### fx_spawn
+
+Parameters:
+
+Usage:
+
+#### fx_trg
+
+Parameters:
+
+Usage:
+
+#### fx_twinkle
+
+Parameters:
+
+Usage:
+
+#### fx_unlock
+
+Parameters:
+
+Usage:
+
+#### fx_wrong
+
+Parameters:
+
+Usage:
+
+#### gameover
+
+Parameters:
+
+Usage:
+
+#### gco
+
+Parameters:
+
+Usage:
+
+#### gen_gfx
+
+Parameters:
+
+Usage:
+
+#### get_all_cards
+
+Parameters:
+
+Usage:
+
+#### get_atk_targets
+
+Parameters:
+
+Usage:
+
+#### get_boost
+
+Parameters:
+
+Usage:
+
+#### get_card
+
+Parameters:
+
+Usage:
+
+#### get_center
+
+Parameters:
+
+Usage:
+
+#### get_delay
+
+Parameters:
+
+Usage:
+
+#### get_desc
+
+Parameters:
+
+Usage:
+
+#### get_disp_stats
+
+Parameters:
+
+Usage:
+
+#### get_empty_soul_slot
+
+Parameters:
+
+Usage:
+
+#### get_firepower
+
+Parameters:
+
+Usage:
+
+#### get_firerange
+
+Parameters:
+
+Usage:
+
+#### get_free_card_slot
+
+Parameters:
+
+Usage:
+
+#### get_global_pos
+
+Parameters:
+
+Usage:
+
+#### get_index_table
+
+Parameters:
+
+Usage:
+
+#### get_inventory
+
+Parameters:
+
+Usage:
+
+#### get_lang
+
+Parameters:
+
+Usage:
+
+#### get_menu_desc
+
+Parameters:
+
+Usage:
+
+#### get_mouse_target
+
+Parameters:
+
+Usage:
+
+#### get_move_range
+
+Parameters:
+
+Usage:
+
+#### get_nearest_piece
+
+Parameters:
+
+Usage:
+
+#### get_nei_with
+
+Parameters:
+
+Usage:
+
+#### get_patterns
+
+Parameters:
+
+Usage:
+
+#### get_piece_name
+
+Parameters:
+
+Usage:
+
+#### get_piece_tempo
+
+Parameters:
+
+Usage:
+
+#### get_pieces
+
+Parameters:
+
+Usage:
+
+#### get_plural
+
+Parameters:
+
+Usage:
+
+#### get_real_bads
+
+Parameters:
+
+Usage:
+
+#### get_recoil_square
+
+Parameters:
+
+Usage:
+
+#### get_slot_card
+
+Parameters:
+
+Usage:
+
+#### get_slot_card_with
+
+Parameters:
+
+Usage:
+
+#### get_slot_cards
+
+Parameters:
+
+Usage:
+
+#### get_soul_range
+
+Parameters:
+
+Usage:
+
+#### get_spread
+
+Parameters:
+
+Usage:
+
+#### get_sq_di
+
+Parameters:
+
+Usage:
+
+#### get_square_at
+
+Parameters:
+
+Usage:
+
+#### get_square_coef
+
+Parameters:
+
+Usage:
+
+#### get_square_pos
+
+Parameters:
+
+Usage:
+
+#### get_time_string
+
+Parameters:
+
+Usage:
+
+#### get_zone
+
+Parameters:
+
+Usage:
+
+#### get_zone_targets
+
+Parameters:
+
+Usage:
+
+#### getfenv
+
+Parameters:
+
+Usage:
+
+#### getinp
+
+Parameters:
+
+Usage:
+
+#### getmetatable
+
+Parameters:
+
+Usage:
+
+#### gifframe
+
+Parameters:
+
+Usage:
+
+#### giflen
+
+Parameters:
+
+Usage:
+
+#### gifstream
+
+Parameters:
+
+Usage:
+
+#### give_ammo
+
+Parameters:
+
+Usage:
+
+#### goto_sq
+
+Parameters:
+
+Usage:
+
+#### grab_item
+
+Parameters:
+
+Usage:
+
+#### grid_rect
+
+Parameters:
+
+Usage:
+
+#### gsq
+
+Parameters:
+
+Usage:
+
+#### gsq_zone
+
+Parameters:
+
+Usage:
+
+#### gtime
+
+Parameters:
+
+Usage:
+
+#### has
+
+Parameters:
+
+Usage:
+
+#### has_card
+
+Parameters:
+
+Usage:
+
+#### hdclear
+
+Parameters:
+
+Usage:
+
+#### help
+
+Parameters:
+
+Usage:
+
+#### hex
+
+Parameters:
+
+Usage:
+
+#### hide_hint
+
+Parameters:
+
+Usage:
+
+#### hit
+
+Parameters:
+
+Usage:
+
+#### hmod
+
+Parameters:
+
+Usage:
+
+#### hrnd
+
+Parameters:
+
+Usage:
+
+#### hsv
+
+Parameters:
+
+Usage:
+
+#### impulse
+
+Parameters:
+
+Usage:
+
+#### inc_ammo
+
+Parameters:
+
+Usage:
+
+#### inc_army
+
+Parameters:
+
+Usage:
+
+#### inc_stats
+
+Parameters:
+
+Usage:
+
+#### increase_card_turns
+
+Parameters:
+
+Usage:
+
+#### init_achievements
+
+Parameters:
+
+Usage:
+
+#### init_banks
+
+Parameters:
+
+Usage:
+
+#### init_cards_hint
+
+Parameters:
+
+Usage:
+
+#### init_codex
+
+Parameters:
+
+Usage:
+
+#### init_credits
+
+Parameters:
+
+Usage:
+
+#### init_game
+
+Parameters:
+
+Usage:
+
+#### init_intro
+
+Parameters:
+
+Usage:
+
+#### init_menu
+
+Parameters:
+
+Usage:
+
+#### init_new_turn
+
+Parameters:
+
+Usage:
+
+#### init_safe_mode
+
+Parameters:
+
+Usage:
+
+#### init_test
+
+Parameters:
+
+Usage:
+
+#### init_vig
+
+Parameters:
+
+Usage:
+
+#### inpnum
+
+Parameters:
+
+Usage:
+
+#### inv_kin
+
+Parameters:
+
+Usage:
+
+#### ipairs
+
+Parameters:
+
+Usage:
+
+#### irnd
+
+Parameters:
+
+Usage:
+
+#### is_card_available
+
+Parameters:
+
+Usage:
+
+#### is_free
+
+Parameters:
+
+Usage:
+
+#### is_king
+
+Parameters:
+
+Usage:
+
+#### is_locked
+
+Parameters:
+
+Usage:
+
+#### is_orth_view
+
+Parameters:
+
+Usage:
+
+#### jesterize
+
+Parameters:
+
+Usage:
+
+#### join
+
+Parameters:
+
+Usage:
+
+#### kl
+
+Parameters:
+
+Usage:
+
+#### leave_sq
+
+Parameters:
+
+Usage:
+
+#### lerp
+
+Parameters:
+
+Usage:
+
+#### level_up
+
+Parameters:
+
+Usage:
+
+#### line
+
+Parameters:
+
+Usage:
+
+#### load
+
+Parameters:
+
+Usage:
+
+#### load_lang
+
+Parameters:
+
+Usage:
+
+#### load_mod
+
+Parameters:
+
+Usage:
+
+#### load_params
+
+Parameters:
+
+Usage:
+
+#### lockaudio
+
+Parameters:
+
+Usage:
+
+#### log
+
+Parameters:
+
+Usage:
+
+#### logdupe
+
+Parameters:
+
+Usage:
+
+#### loop
+
+Parameters:
+
+Usage:
+
+#### lprint
+
+Parameters:
+
+Usage:
+
+#### ls
+
+Parameters:
+
+Usage:
+
+#### lshr
+
+Parameters:
+
+Usage:
+
+#### ltime
+
+Parameters:
+
+Usage:
+
+#### man
+
+Parameters:
+
+Usage:
+
+#### mantxt
+
+Parameters:
+
+Usage:
+
+#### match
+
+Parameters:
+
+Usage:
+
+#### max
+
+Parameters:
+
+Usage:
+
+#### mdr
+
+Parameters:
+
+Usage:
+
+#### memcpy
+
+Parameters:
+
+Usage:
+
+#### memsbs
+
+Parameters:
+
+Usage:
+
+#### memset
+
+Parameters:
+
+Usage:
+
+#### merge_funcs
+
+Parameters:
+
+Usage:
+
+#### mid
+
+Parameters:
+
+Usage:
+
+#### min
+
+Parameters:
+
+Usage:
+
+#### min_digits
+
+Parameters:
+
+Usage:
+
+#### mk_bullet
+
+Parameters:
+
+Usage:
+
+#### mk_but
+
+Parameters:
+
+Usage:
+
+#### mk_hint_but
+
+Parameters:
+
+Usage:
+
+#### mk_menu_but
+
+Parameters:
+
+Usage:
+
+#### mk_part
+
+Parameters:
+
+Usage:
+
+#### mk_sq_but
+
+Parameters:
+
+Usage:
+
+#### mk_square_but
+
+Parameters:
+
+Usage:
+
+#### mk_text_but
+
+Parameters:
+
+Usage:
+
+#### mkdir
+
+Parameters:
+
+Usage:
+
+#### mke
+
+Parameters:
+
+Usage:
+
+#### modchk
+
+Parameters:
+
+Usage:
+
+#### mouse
+
+Parameters:
+
+Usage:
+
+#### move_hero
+
+Parameters:
+
+Usage:
+
+#### mpal
+
+Parameters:
+
+Usage:
+
+#### msg
+
+Parameters:
+
+Usage:
+
+#### music
+
+Parameters:
+
+Usage:
+
+#### muslen
+
+Parameters:
+
+Usage:
+
+#### musvol
+
+Parameters:
+
+Usage:
+
+#### mv
+
+Parameters:
+
+Usage:
+
+#### mvt
+
+Parameters:
+
+Usage:
+
+#### namefind
+
+Parameters:
+
+Usage:
+
+#### new_card
+
+Parameters:
+
+Usage:
+
+#### new_level
+
+Parameters:
+
+Usage:
+
+#### new_piece
+
+Parameters:
+
+Usage:
+
+#### new_turn
+
+Parameters:
+
+Usage:
+
+#### newbnk
+
+Parameters:
+
+Usage:
+
+#### newchk
+
+Parameters:
+
+Usage:
+
+#### newfnt
+
+Parameters:
+
+Usage:
+
+#### newgif
+
+Parameters:
+
+Usage:
+
+#### newmus
+
+Parameters:
+
+Usage:
+
+#### newsfx
+
+Parameters:
+
+Usage:
+
+#### newsrf
+
+Parameters:
+
+Usage:
+
+#### newwin
+
+Parameters:
+
+Usage:
+
+#### nxt
+
+Parameters:
+
+Usage:
+
+#### nxtmusic
+
+Parameters:
+
+Usage:
+
+#### on_death
+
+Parameters:
+
+Usage:
+
+#### open_menu
+
+Parameters:
+
+Usage:
+
+#### opp_atk
+
+Parameters:
+
+Usage:
+
+#### opp_move
+
+Parameters:
+
+Usage:
+
+#### opp_turn
+
+Parameters:
+
+Usage:
+
+#### opt
+
+Parameters:
+
+Usage:
+
+#### ord
+
+Parameters:
+
+Usage:
+
+#### orth
+
+Parameters:
+
+Usage:
+
+#### ospr
+
+Parameters:
+
+Usage:
+
+#### pairs
+
+Parameters:
+
+Usage:
+
+#### pal
+
+Parameters:
+
+Usage:
+
+#### pal_inc
+
+Parameters:
+
+Usage:
+
+#### pal_piece
+
+Parameters:
+
+Usage:
+
+#### palette
+
+Parameters:
+
+Usage:
+
+#### palt
+
+Parameters:
+
+Usage:
+
+#### pause_pal
+
+Parameters:
+
+Usage:
+
+#### peek
+
+Parameters:
+
+Usage:
+
+#### peek2
+
+Parameters:
+
+Usage:
+
+#### peek4
+
+Parameters:
+
+Usage:
+
+#### pget
+
+Parameters:
+
+Usage:
+
+#### pick
+
+Parameters:
+
+Usage:
+
+#### play
+
+Parameters:
+
+Usage:
+
+#### play_events
+
+Parameters:
+
+Usage:
+
+#### plur
+
+Parameters:
+
+Usage:
+
+#### poke
+
+Parameters:
+
+Usage:
+
+#### poke2
+
+Parameters:
+
+Usage:
+
+#### poke4
+
+Parameters:
+
+Usage:
+
+#### pop_child
+
+Parameters:
+
+Usage:
+
+#### pow
+
+Parameters:
+
+Usage:
+
+#### pprint
+
+Parameters:
+
+Usage:
+
+#### print
+
+Parameters:
+
+Usage:
+
+#### progress
+
+Parameters:
+
+Usage:
+
+#### pset
+
+Parameters:
+
+Usage:
+
+#### punkcake_intro
+
+Parameters:
+
+Usage:
+
+#### quit
+
+Parameters:
+
+Usage:
+
+#### quitting
+
+Parameters:
+
+Usage:
+
+#### rand
+
+Parameters:
+
+Usage:
+
+#### rank_select
+
+Parameters:
+
+Usage:
+
+#### rawget
+
+Parameters:
+
+Usage:
+
+#### rawset
+
+Parameters:
+
+Usage:
+
+#### read
+
+Parameters:
+
+Usage:
+
+#### read_gameplay_file
+
+Parameters:
+
+Usage:
+
+#### recal_scepters
+
+Parameters:
+
+Usage:
+
+#### rect
+
+Parameters:
+
+Usage:
+
+#### rect_col
+
+Parameters:
+
+Usage:
+
+#### rectfill
+
+Parameters:
+
+Usage:
+
+#### rectshade
+
+Parameters:
+
+Usage:
+
+#### refill_ammo
+
+Parameters:
+
+Usage:
+
+#### reg_add
+
+Parameters:
+
+Usage:
+
+#### reload
+
+Parameters:
+
+Usage:
+
+#### remove_buts
+
+Parameters:
+
+Usage:
+
+#### remove_soul_slot
+
+Parameters:
+
+Usage:
+
+#### remysys_set_glob
+
+Parameters:
+
+Usage:
+
+#### remysys_timestamp
+
+Parameters:
+
+Usage:
+
+#### rep
+
+Parameters:
+
+Usage:
+
+#### require
+
+Parameters:
+
+Usage:
+
+#### reset
+
+Parameters:
+
+Usage:
+
+#### reset_save
+
+Parameters:
+
+Usage:
+
+#### resume
+
+Parameters:
+
+Usage:
+
+#### retire
+
+Parameters:
+
+Usage:
+
+#### reverse
+
+Parameters:
+
+Usage:
+
+#### rgb
+
+Parameters:
+
+Usage:
+
+#### rlog
+
+Parameters:
+
+Usage:
+
+#### rm
+
+Parameters:
+
+Usage:
+
+#### rnd
+
+Parameters:
+
+Usage:
+
+#### rotate
+
+Parameters:
+
+Usage:
+
+#### rotl
+
+Parameters:
+
+Usage:
+
+#### rotr
+
+Parameters:
+
+Usage:
+
+#### round
+
+Parameters:
+
+Usage:
+
+#### run
+
+Parameters:
+
+Usage:
+
+#### safe_require
+
+Parameters:
+
+Usage:
+
+#### safesize
+
+Parameters:
+
+Usage:
+
+#### safesub
+
+Parameters:
+
+Usage:
+
+#### save
+
+Parameters:
+
+Usage:
+
+#### sbs
+
+Parameters:
+
+Usage:
+
+#### scan_cancel
+
+Parameters:
+
+Usage:
+
+#### screen_shake
+
+Parameters:
+
+Usage:
+
+#### serialize
+
+Parameters:
+
+Usage:
+
+#### set_army
+
+Parameters:
+
+Usage:
+
+#### set_instructions
+
+Parameters:
+
+Usage:
+
+#### set_mode
+
+Parameters:
+
+Usage:
+
+#### setfenv
+
+Parameters:
+
+Usage:
+
+#### setmetatable
+
+Parameters:
+
+Usage:
+
+#### setup_piece
+
+Parameters:
+
+Usage:
+
+#### sfillp
+
+Parameters:
+
+Usage:
+
+#### sfx
+
+Parameters:
+
+Usage:
+
+#### sfxlen
+
+Parameters:
+
+Usage:
+
+#### sfxvol
+
+Parameters:
+
+Usage:
+
+#### sget
+
+Parameters:
+
+Usage:
+
+#### sgn
+
+Parameters:
+
+Usage:
+
+#### shader
+
+Parameters:
+
+Usage:
+
+#### shdrf
+
+Parameters:
+
+Usage:
+
+#### shdrf2
+
+Parameters:
+
+Usage:
+
+#### shdrf3
+
+Parameters:
+
+Usage:
+
+#### shdrf4
+
+Parameters:
+
+Usage:
+
+#### shdri
+
+Parameters:
+
+Usage:
+
+#### shdri2
+
+Parameters:
+
+Usage:
+
+#### shdri3
+
+Parameters:
+
+Usage:
+
+#### shdri4
+
+Parameters:
+
+Usage:
+
+#### shdrsrf
+
+Parameters:
+
+Usage:
+
+#### shl
+
+Parameters:
+
+Usage:
+
+#### show_danger
+
+Parameters:
+
+Usage:
+
+#### show_hint
+
+Parameters:
+
+Usage:
+
+#### shpr
+
+Parameters:
+
+Usage:
+
+#### shr
+
+Parameters:
+
+Usage:
+
+#### shuffle
+
+Parameters:
+
+Usage:
+
+#### shuffle_copy
+
+Parameters:
+
+Usage:
+
+#### sig
+
+Parameters:
+
+Usage:
+
+#### sin
+
+Parameters:
+
+Usage:
+
+#### sleep
+
+Parameters:
+
+Usage:
+
+#### slicer
+
+Parameters:
+
+Usage:
+
+#### spawn_dark_bishop
+
+Parameters:
+
+Usage:
+
+#### spawn_hero
+
+Parameters:
+
+Usage:
+
+#### spawn_pieces
+
+Parameters:
+
+Usage:
+
+#### split
+
+Parameters:
+
+Usage:
+
+#### spr
+
+Parameters:
+
+Usage:
+
+#### sprgrid
+
+Parameters:
+
+Usage:
+
+#### spritesheet
+
+Parameters:
+
+Usage:
+
+#### sqp
+
+Parameters:
+
+Usage:
+
+#### sqr
+
+Parameters:
+
+Usage:
+
+#### sqrdist
+
+Parameters:
+
+Usage:
+
+#### sqrt
+
+Parameters:
+
+Usage:
+
+#### srand
+
+Parameters:
+
+Usage:
+
+#### srfmem
+
+Parameters:
+
+Usage:
+
+#### srfname
+
+Parameters:
+
+Usage:
+
+#### srfshot
+
+Parameters:
+
+Usage:
+
+#### srfsize
+
+Parameters:
+
+Usage:
+
+#### sset
+
+Parameters:
+
+Usage:
+
+#### sspr
+
+Parameters:
+
+Usage:
+
+#### start_lvl_music
+
+Parameters:
+
+Usage:
+
+#### steal
+
+Parameters:
+
+Usage:
+
+#### steam
+
+Parameters:
+
+Usage:
+
+#### step
+
+Parameters:
+
+Usage:
+
+#### stop
+
+Parameters:
+
+Usage:
+
+#### storm
+
+Parameters:
+
+Usage:
+
+#### stringify_table
+
+Parameters:
+
+Usage:
+
+#### strwidth
+
+Parameters:
+
+Usage:
+
+#### sub
+
+Parameters:
+
+Usage:
+
+#### sugar_step
+
+Parameters:
+
+Usage:
+
+#### sum_el
+
+Parameters:
+
+Usage:
+
+#### sysbat
+
+Parameters:
+
+Usage:
+
+#### syslang
+
+Parameters:
+
+Usage:
+
+#### table_from_file
+
+Parameters:
+
+Usage:
+
+#### table_from_file_old
+
+Parameters:
+
+Usage:
+
+#### table_from_string
+
+Parameters:
+
+Usage:
+
+#### target
+
+Parameters:
+
+Usage:
+
+#### tbl_import
+
+Parameters:
+
+Usage:
+
+#### tbl_index
+
+Parameters:
+
+Usage:
+
+#### tbz
+
+Parameters:
+
+Usage:
+
+#### tcamera
+
+Parameters:
+
+Usage:
+
+#### tear_apart
+
+Parameters:
+
+Usage:
+
+#### throw_grenade
+
+Parameters:
+
+Usage:
+
+#### throw_piece
+
+Parameters:
+
+Usage:
+
+#### time
+
+Parameters:
+
+Usage:
+
+#### toggle_target
+
+Parameters:
+
+Usage:
+
+#### tonum
+
+Parameters:
+
+Usage:
+
+#### tostr
+
+Parameters:
+
+Usage:
+
+#### trace_cover
+
+Parameters:
+
+Usage:
+
+#### trace_hdist
+
+Parameters:
+
+Usage:
+
+#### trace_heros_dists
+
+Parameters:
+
+Usage:
+
+#### traceback
+
+Parameters:
+
+Usage:
+
+#### track_mouse
+
+Parameters:
+
+Usage:
+
+#### transfer
+
+Parameters:
+
+Usage:
+
+#### transp
+
+Parameters:
+
+Usage:
+
+#### tri
+
+Parameters:
+
+Usage:
+
+#### tri_angle
+
+Parameters:
+
+Usage:
+
+#### trifill
+
+Parameters:
+
+Usage:
+
+#### trig_achievement
+
+Parameters:
+
+Usage:
+
+#### twv
+
+Parameters:
+
+Usage:
+
+#### txtinp
+
+Parameters:
+
+Usage:
+
+#### txtwidth
+
+Parameters:
+
+Usage:
+
+#### type
+
+Parameters:
+
+Usage:
+
+#### uadd
+
+Parameters:
+
+Usage:
+
+#### unflip_card
+
+Parameters:
+
+Usage:
+
+#### unlockaudio
+
+Parameters:
+
+Usage:
+
+#### unpack
+
+Parameters:
+
+Usage:
+
+#### unpause
+
+Parameters:
+
+Usage:
+
+#### upe
+
+Parameters:
+
+Usage:
+
+#### uplift
+
+Parameters:
+
+Usage:
+
+#### uppercase
+
+Parameters:
+
+Usage:
+
+#### url
+
+Parameters:
+
+Usage:
+
+#### wait
+
+Parameters:
+
+Usage:
+
+#### warp
+
+Parameters:
+
+Usage:
+
+#### white_king_up
+
+Parameters:
+
+Usage:
+
+#### window
+
+Parameters:
+
+Usage:
+
+#### winspec
+
+Parameters:
+
+Usage:
+
+#### wipe
+
+Parameters:
+
+Usage:
+
+#### wlog
+
+Parameters:
+
+Usage:
+
+#### write
+
+Parameters:
+
+Usage:
+
+#### write_big_at
+
+Parameters:
+
+Usage:
+
+#### xpl
+
+Parameters:
+
+Usage:
+
+#### xpl_boss
+
+Parameters:
+
+Usage:
+
+#### xpl_king
+
+Parameters:
+
+Usage:
+
+#### ysort
+Parameters:
+
+Usage:
+
+
 ## Common crash reasons 
 - Not having correct syntax, this includes things like commas or equal signs. 
 - Having a card mentioned in the exclusion area that doesn’t exist 
