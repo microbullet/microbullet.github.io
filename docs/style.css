@@ -1,0 +1,126 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e1529;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83769c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d2b53;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+body {
+    background-color: #0e1529;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
+    font-family: 'pico-8', 'serif';
+    text-transform: uppercase;
+}
+
+nav{
+    margin: 0px;
+    padding: 10px;
+    line-height: 1;
+    width: 62%;
+}
+
+p {
+    align-items: center;
+    line-height: 2;
+    text-align: center;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 10%;
+}
+
+.name {
+    margin-top: 120px;
+    color: #ffccaa;
+}
+
+.description {
+    width: auto;
+    padding: 50px;
+    margin: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #83769c;
+}
+
+@font-face {
+    font-family: 'pico-8';
+    src: url(PICO-8\ mono.ttf);
+}
+
+.images {
+    margin: auto;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    margin: 6px;
+}
+
+.bottom {
+    width: 100%;
+    height: 40px;
+}
+
+.left{
+    width: 62%;
+    overflow-y: scroll;
+}
+
+.right {
+    width:38%;
+    overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.storage {
+    opacity: 0%;
+}
+
