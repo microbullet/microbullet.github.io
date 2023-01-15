@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="initialise()">
+        <nav style="background-color: #1d2b53; color: #83769c;position: absolute;border-bottom-width: 3px;border:#1d2b53;">SK codex v1.35</nav>
+        <div class="flex-container">
+            <div class="left" id="left">
+                <nav style="background-color: #1d2b53; color: #83769c;width: 100%;">SK codex v1.35</nav>
+                <button class="card_button"  onclick="display(1)"><img class="card" src="images/card_1.png"></button>
+                <button class="card_button"  onclick="display(2)"><img class="card" src="images/card_2.png"></button>
+                <button class="card_button"  onclick="display(3)"><img class="card" src="images/card_3.png"></button>
+                <button class="card_button"  onclick="display(4)"><img class="card" src="images/card_4.png"></button>
+                <button class="card_button"  onclick="display(5)"><img class="card" src="images/card_5.png"></button>
+                <button class="card_button"  onclick="display(6)"><img class="card" src="images/card_6.png"></button>
+                <button class="card_button"  onclick="display(7)"><img class="card" src="images/card_7.png"></button>
+                <button class="card_button"  onclick="display(8)"><img class="card" src="images/card_8.png"></button>
+                <button class="card_button"  onclick="display(9)"><img class="card" src="images/card_9.png"></button>
+                <button class="card_button"  onclick="display(10)"><img class="card" src="images/card_10.png"></button>
+                <button class="card_button"  onclick="display(11)"><img class="card" src="images/card_11.png"></button>
+                <button class="card_button"  onclick="display(12)"><img class="card" src="images/card_12.png"></button>
+                <button class="card_button"  onclick="display(13)"><img class="card" src="images/card_13.png"></button>
+                <button class="card_button"  onclick="display(18)"><img class="card" src="images/card_18.png"></button>
+                <button class="card_button"  onclick="display(14)"><img class="card" src="images/card_14.png"></button>
+                <button class="card_button"  onclick="display(15)"><img class="card" src="images/card_15.png"></button>
+                <button class="card_button"  onclick="display(16)"><img class="card" src="images/card_16.png"></button>
+                <button class="card_button"  onclick="display(17)"><img class="card" src="images/card_17.png"></button>
+                <button class="card_button"  onclick="display(21)"><img class="card" src="images/card_21.png"></button>
+                <button class="card_button"  onclick="display(26)"><img class="card" src="images/card_26.png"></button>
+                <button class="card_button"  onclick="display(19)"><img class="card" src="images/card_19.png"></button>
+                <button class="card_button"  onclick="display(20)"><img class="card" src="images/card_20.png"></button>
+                <button class="card_button"  onclick="display(22)"><img class="card" src="images/card_22.png"></button>
+                <button class="card_button"  onclick="display(23)"><img class="card" src="images/card_23.png"></button>
+                <button class="card_button"  onclick="display(24)"><img class="card" src="images/card_24.png"></button>
+                <button class="card_button"  onclick="display(25)"><img class="card" src="images/card_25.png"></button>
+                <button class="card_button"  onclick="display(27)"><img class="card" src="images/card_27.png"></button>
+                <button class="card_button"  onclick="display(28)"><img class="card" src="images/card_28.png"></button>
+                <button class="card_button"  onclick="display(29)"><img class="card" src="images/card_29.png"></button>
+                <button class="card_button"  onclick="display(30)"><img class="card" src="images/card_30.png"></button>
+                <button class="card_button"  onclick="display(31)"><img class="card" src="images/card_31.png"></button>
+                <button class="card_button"  onclick="display(32)"><img class="card" src="images/card_32.png"></button>
+                <button class="card_button"  onclick="display(33)"><img class="card" src="images/card_33.png"></button>
+                <button class="card_button"  onclick="display(34)"><img class="card" src="images/card_34.png"></button>
+                <button class="card_button"  onclick="display(35)"><img class="card" src="images/card_35.png"></button>
+                <button class="card_button"  onclick="display(36)"><img class="card" src="images/card_36.png"></button>
+                <button class="card_button"  onclick="display(37)"><img class="card" src="images/card_37.png"></button>
+                <button class="card_button"  onclick="display(38)"><img class="card" src="images/card_38.png"></button>
+                <button class="card_button"  onclick="display(39)"><img class="card" src="images/card_39.png"></button>
+                <button class="card_button"  onclick="display(40)"><img class="card" src="images/card_40.png"></button>
+                <button class="card_button"  onclick="display(41)"><img class="card" src="images/card_41.png"></button>
+                <button class="card_button"  onclick="display(42)"><img class="card" src="images/card_42.png"></button>
+                <button class="card_button"  onclick="display(43)"><img class="card" src="images/card_43.png"></button>
+                <button class="card_button"  onclick="display(44)"><img class="card" src="images/card_44.png"></button>
+                <button class="card_button"  onclick="display(45)"><img class="card" src="images/card_45.png"></button>
+                <button class="card_button"  onclick="display(46)"><img class="card" src="images/card_46.png"></button>
+                <button class="card_button"  onclick="display(47)"><img class="card" src="images/card_47.png"></button>
+                <button class="card_button"  onclick="display(48)"><img class="card" src="images/card_48.png"></button>
+                <button class="card_button"  onclick="display(49)"><img class="card" src="images/card_49.png"></button>
+                <button class="card_button"  onclick="display(50)"><img class="card" src="images/card_50.png"></button>
+                <button class="card_button"  onclick="display(51)"><img class="card" src="images/card_51.png"></button>
+                <button class="card_button"  onclick="display(52)"><img class="card" src="images/card_52.png"></button>
+                <button class="card_button"  onclick="display(53)"><img class="card" src="images/card_53.png"></button>
+                <button class="card_button"  onclick="display(54)"><img class="card" src="images/card_54.png"></button>
+                <button class="card_button"  onclick="display(55)"><img class="card" src="images/card_55.png"></button>
+                <button class="card_button"  onclick="display(60)"><img class="card" src="images/card_60.png"></button>
+                <button class="card_button"  onclick="display(61)"><img class="card" src="images/card_61.png"></button>
+                <button class="card_button"  onclick="display(62)"><img class="card" src="images/card_62.png"></button>
+                <button class="card_button"  onclick="display(63)"><img class="card" src="images/card_63.png"></button>
+                <button class="card_button"  onclick="display(64)"><img class="card" src="images/card_64.png"></button>
+                <button class="card_button"  onclick="display(65)"><img class="card" src="images/card_65.png"></button>
+                <button class="card_button"  onclick="display(66)"><img class="card" src="images/card_66.png"></button>
+                <button class="card_button"  onclick="display(67)"><img class="card" src="images/card_67.png"></button>
+                <button class="card_button"  onclick="display(68)"><img class="card" src="images/card_68.png"></button>
+                <button class="card_button"  onclick="display(69)"><img class="card" src="images/card_69.png"></button>
+                <button class="card_button"  onclick="display(70)"><img class="card" src="images/card_70.png"></button>
+                <button class="card_button"  onclick="display(71)"><img class="card" src="images/card_71.png"></button>
+                <button class="card_button"  onclick="display(72)"><img class="card" src="images/card_72.png"></button>
+                <button class="card_button"  onclick="display(73)"><img class="card" src="images/card_73.png"></button>
+                <button class="card_button"  onclick="display(74)"><img class="card" src="images/card_74.png"></button>
+                <button class="card_button"  onclick="display(75)"><img class="card" src="images/card_75.png"></button>
+                <button class="card_button"  onclick="display(76)"><img class="card" src="images/card_76.png"></button>
+                <button class="card_button"  onclick="display(77)"><img class="card" src="images/card_77.png"></button>
+                <button class="card_button"  onclick="display(78)"><img class="card" src="images/card_78.png"></button>
+                <button class="card_button"  onclick="display(79)"><img class="card" src="images/card_79.png"></button>
+                <button class="card_button"  onclick="display(80)"><img class="card" src="images/card_80.png"></button>
+                <button class="card_button"  onclick="display(81)"><img class="card" src="images/card_81.png"></button>
+                <button class="card_button"  onclick="display(82)"><img class="card" src="images/card_82.png"></button>
+                <button class="card_button"  onclick="display(83)"><img class="card" src="images/card_83.png"></button>
+                <button class="card_button"  onclick="display(84)"><img class="card" src="images/card_84.png"></button>
+                <button class="card_button"  onclick="display(85)"><img class="card" src="images/card_85.png"></button>
+                <button class="card_button"  onclick="display(86)"><img class="card" src="images/card_86.png"></button>
+                <button class="card_button"  onclick="display(87)"><img class="card" src="images/card_87.png"></button>
+                <button class="card_button"  onclick="display(88)"><img class="card" src="images/card_88.png"></button>
+                <button class="card_button"  onclick="display(89)"><img class="card" src="images/card_89.png"></button>
+                <button class="card_button"  onclick="display(90)"><img class="card" src="images/card_90.png"></button>
+                <button class="card_button"  onclick="display(91)"><img class="card" src="images/card_91.png"></button>
+                <button class="card_button"  onclick="display(92)"><img class="card" src="images/card_92.png"></button>
+                <button class="card_button"  onclick="display(93)"><img class="card" src="images/card_93.png"></button>
+                <button class="card_button"  onclick="display(94)"><img class="card" src="images/card_94.png"></button>
+                <button class="card_button"  onclick="display(95)"><img class="card" src="images/card_95.png"></button>
+                <button class="card_button"  onclick="display(96)"><img class="card" src="images/card_96.png"></button>
+                <button class="card_button"  onclick="display(97)"><img class="card" src="images/card_97.png"></button>
+                <button class="card_button"  onclick="display(98)"><img class="card" src="images/card_98.png"></button>
+                <button class="card_button"  onclick="display(99)"><img class="card" src="images/card_99.png"></button>
+                <button class="card_button"  onclick="display(100)"><img class="card" src="images/card_100.png"></button>
+                <button class="card_button"  onclick="display(101)"><img class="card" src="images/card_101.png"></button>
+                <button class="card_button"  onclick="display(102)"><img class="card" src="images/card_102.png"></button>
+                <button class="card_button"  onclick="display(103)"><img class="card" src="images/card_103.png"></button>
+                <button class="card_button"  onclick="display(104)"><img class="card" src="images/card_104.png"></button>
+                <button class="card_button"  onclick="display(105)"><img class="card" src="images/card_105.png"></button>
+                <button class="card_button"  onclick="display(106)"><img class="card" src="images/card_106.png "></button>
+                <button class="card_button"  onclick="display(107)"><img class="card" src="images/card_107.png"></button>
+                <button class="card_button"  onclick="display(108)"><img class="card" src="images/card_108.png"></button>
+                <button class="card_button"  onclick="display(109)"><img class="card" src="images/card_109.png"></button>
+                <button class="card_button"  onclick="display(110)"><img class="card" src="images/card_110.png"></button>
+                <button class="card_button"  onclick="display(111)"><img class="card" src="images/card_111.png"></button>
+                <button class="card_button"  onclick="display(112)"><img class="card" src="images/card_112.png"></button>
+            </div>
+            <div class="right">
+                <div class="name"><p id='name'>Ermine Belt</p></div>
+                <div class="card_image"><img id="image" src="images/card_1.png"></div>
+                <div class="description" id="description">+3 ammo max</div>
+                <div class="req">
+                    <p id="req2" style="opacity: 0;"> need card: </p>
+                    <p id="req" style="color: #83769c;"></p>
+                </div>
+            </div>
+        </div>
+        <div class="storage">
+            <div class="name_container" id="name_container">
+                <p id='1a'>Ermine Belt</p>
+                <p id='2a'>Rightful Curtsy</p>     
+                <p id='3a'>Elite Gem</p>
+                <p id='4a'>Extra barrel</p>        
+                <p id='5a'>Royal loafers</p>       
+                <p id='6a'>Majestic censer</p>     
+                <p id='7a'>Sacred Crown</p>        
+                <p id='8a'>Blunderbuss</p>
+                <p id='9a'>Engraved scope</p>      
+                <p id='10a'>Holy Gunpowder</p>     
+                <p id='11a'>Ritual dagger</p>      
+                <p id='12a'>August presence</p>    
+                <p id='13a'>Crow's blessing</p>
+                <p id='14a'>Wand of Downpour</p>
+                <p id='15a'>Wand of frenzy</p>
+                <p id='16a'>Wand of Wrath</p>     
+                <p id='17a'>Wand of Wings</p>    
+                <p id='18a'>The moat</p>
+                <p id='19a'>Gradual absolution</p>
+                <p id='20a'>Taunting hop</p>     
+                <p id='21a'>Wand of gust</p>
+                <p id='22a'>Unfaithful steed</p>       
+                <p id='23a'>Unjust decree</p>   
+                <p id='24a'>Kingly alms</p>
+                <p id='25a'>Subtle poison</p>
+                <p id='26a'></p>
+                <p id='27a'>Small fry harvest</p>  
+                <p id='28a'>A Piercing TRuth</p>   
+                <p id='29a'>Black mist</p>
+                <p id='30a'>Kings's shoulders</p>  
+                <p id='31a'>High focus</p>
+                <p id='32a'>Courteous jousting</p> 
+                <p id='33a'>Cornered despot</p>    
+                <p id='34a'>Sawed-off justice</p>  
+                <p id='35a'>Welcome gift</p>       
+                <p id='36a'>Cannon fodder</p>      
+                <p id='37a'></p>
+                <p id='38a'></p>
+                <p id='39a'></p>
+                <p id='40a'>Egotic maelstrom</p>
+                <p id='41a'></p>
+                <p id='42a'></p>
+                <p id='43a'>Ravenous rats</p>      
+                <p id='44a'>Deep water</p>
+                <p id='45a'>Unholy call</p>        
+                <p id='46a'>Undercover Mission</p> 
+                <p id='47a'>caltrops</p>
+                <p id='48a'>Nightbane</p>
+                <p id='49a'>Bushido</p>
+                <p id='50a'>Bloodless coups</p>
+                <p id='51a'>Wand of hypnosis</p>
+                <p id='52a'>Presbyopia</p>
+                <p id='53a'>Golden aging</p>
+                <p id='54a'>Fool Companion</p>
+                <p id='55a'>Force feeding</p>
+                <p id='60a'>Backups</p>
+                <p id='61a'>Cavalry</p>
+                <p id='62a'>Conclave</p>
+                <p id='63a'>Entitle</p>
+                <p id='64a'>cardinal</p>
+                <p id='65a'>remparts</p>
+                <p id='66a'>pillage</p>
+                <p id='67a'>Crusades</p>
+                <p id='68a'>peace</p>
+                <p id='69a'>king's mistress</p>
+                <p id='70a'>revolution</p>
+                <p id='71a'></p>
+                <p id='72a'>Ruins</p>
+                <p id='73a'>assault</p>
+                <p id='74a'>kite shield</p>
+                <p id='75a'>zealots</p>
+                <p id='76a'>Militia</p>
+                <p id='77a'>Ammunition depot</p>
+                <p id='78a'>scouting</p>
+                <p id='79a'>pikemen</p>
+                <p id='80a'></p>
+                <p id='81a'>Castle</p>
+                <p id='82a'>conscription</p>
+                <p id='83a'>theocracy</p>
+                <p id='84a'></p>
+                <p id='85a'>court of the king</p>
+                <p id='86a'>The red book</p>
+                <p id='87a'>saboteur</p>
+                <p id='88a'>Homecoming</p>
+                <p id='89a'>lookout tower</p>
+                <p id='90a'>throne room</p>
+                <p id='91a'>The secret heir</p>
+                <p id='92a'>genderqueer</p>
+                <p id='93a'>karma</p>
+                <p id='94a'>undead armies</p>
+                <p id='95a'>shortage</p>
+                <p id='96a'>Succubus</p>
+                <p id='97a'>bunker</p>
+                <p id='98a'>sanctity</p>
+                <p id='99a'>knightmare</p>
+                <p id='100a'>highest dungeon</p>
+                <p id='101a'>cathedral</p>
+                <p id='102a'>the bridge</p>
+                <p id='103a'>Divine healing</p>
+                <p id='104a'>last guardian</p>
+                <p id='105a'>Trowel</p>
+                <p id='106a'>full plate armor</p>
+                <p id='107a'>military acadamy</p>
+                <p id='108a'>witch's curse</p>
+                <p id='109a'>Sadlle</p>
+                <p id='110a'>The jester</p>
+                <p id='111a'>guillotine</p>
+                <p id='112a'>analysis paralysis</p>
+            </div>
+            <div class="description_container">
+                <p id='1b'>+3 ammo max</p>
+                <p id='2b'>+1 ammo max +50% chance to knockback enemy</p>
+                <p id='3b'>+1 ammo regeneration +1 fire range</p>
+                <p id='4b'>Fire arc +7 cahrge 1 additional shell in your shotgun </p>
+                <p id='5b'>Strafe mode: RIght click a target and fire on your next move</p>
+                <p id='6b'>+1 ammo max add 1 extra soul slot</p>
+                <p id='7b'>You can play an extra turn after using a soul card move</p>
+                <p id='8b'>+2 firepower<br>fire arc +30</p>
+                <p id='9b'>Right Click: arc -45 and range +1. Resets on each move or reload</p>
+                <p id='10b'>+1 firepower</p>
+                <p id='11b'>Blade: +1 King: -2 hp -1 fire range</p>
+                <p id='12b'>non-king pieces can't come near your king</p>
+                <p id='13b'>+2 fire range</p>
+                <p id='14b'>Non-Knight pieces can't cross the moat in one move</p>
+                <p id='15b'>refill your ammo and reload your gun</p>
+                <p id='16b'>Deal firepower damage to a non-king target</p>
+                <p id='17b'>Move up to 3 squares</p>
+                <p id='18b'>Non-knight pieces can't cross the moat in one move</p>
+                <p id='19b'>+1 firepower for every empty soul slot</p>
+                <p id='20b'>ONce per turn you can jump over a nearby piece for 1 dmg without ending the turn</p>
+                <p id='21b'>Repel all white pieces northward</p>
+                <p id='22b'>move range: +1 flip card if there's no knight on the board</p>
+                <p id='23b'>-1 firepower<br>The king is allowed to right click to fire all loaded shells</p>
+                <p id='24b'>+2 grenades<br>right click to throw a grenade</p>
+                <p id='25b'>King: -1 hp<br>Queens moves are limited to 1 square for 15 turns<br>Queen: -1 hp</p>
+                <p id='26b'>+6 ammo max King: +2 hp</p>
+                <p id='27b'>+1 ammo max gain 1 ammo each time you kill a pawn</p>
+                <p id='28b'>your bullets have a 30% chance to pierce through targets</p>
+                <p id='29b'>-1 fire range protects from death once per floor</p>
+                <p id='30b'>Once per floor, drag a nearby piece on your king and throw it in any direction</p>
+                <p id='31b'>+1 firepower fire arc -18 Flip card if a piece is adjacent to you</p>
+                <p id='32b'>Fire arc -10 play an extra turn when you kill a knight</p>
+                <p id='33b'>+2 firepower flip card if your king is not on the board's edge</p>
+                <p id='34b'>Shooting moves you backwards -1 fire range +2 firepower</p>
+                <p id='35b'>+4 firepower Flip card if your shotgun has been reloaded</p>
+                <p id='36b'>Use pawn's souls to gain +2 firepower on your next shot</p>
+                <p id='37b'>+2 soul slots<br>+1 bishop</p>
+                <p id='38b'>throw 1 grenade for free per turn</p>
+                <p id='39b'>spawn a cannonball</p>
+                <p id='40b'>+1 firepower every 10 turns</p>
+                <p id='41b'><br></p>
+                <p id='42b'><br></p>
+                <p id='43b'>When you kill a piece, a rat bites the nearest target for 1 dmg</p>
+                <p id='44b'>non-knight pieces within the moat can't attack you</p>
+                <p id='45b'>Add 3 pentagrams on the board. Trigger them to get an extra turn. trigger all of them to get +2 firepower</p>
+                <p id='46b'>When you reach the waypoint choose a disruption effect and play an extra turn</p>
+                <p id='47b'>+1 ammo max injured pieces lose 2 speed</p>
+                <p id='48b'>Blade: +3</p>
+                <p id='49b'>-1 firepower Once per turn, execture a piece with your blade without ending your turn. Blade +2</p>
+                <p id='50b'>Flip this card if a pawn is killed Pawns can't attack you</p>
+                <p id='51b'>Play a white piece of your choice</p>
+                <p id='52b'><br></p>
+                <p id='53b'>King: -2 hp<br>Queen: -1 hp<br>Every 10 turns:<br>queen: -1 speed<br>King: -1 speed</p>
+                <p id='54b'><br>Jesters can move in all directions And always follow King. Earn an extra turn when you kill a jester</p>
+                <p id='55b'>+1 ammo max<br>reloading without moving lets you squeeze one more shell in the shotgun when it's full</p>
+                <p id='60b'>add 3 pawns</p>
+                <p id='61b'>add 2 knights after 15 turns</p>
+                <p id='62b'>add 2 bishops after 15 turns</p>
+                <p id='63b'>remove 1 pawn add 1 knight -1 ammo max</p>
+                <p id='64b'>remove 1 pawn add 1 bishop -1 ammo max</p>
+                <p id='65b'>remove 2 pawns add 1 rook</p>
+                <p id='66b'>remove 1 rook add 5 pawns pawn: +1 hp</p>
+                <p id='67b'>remove 1 bishop add 2 knights</p>
+                <p id='68b'>remove 1 knight add 2 bishops</p>
+                <p id='69b'>add 1 queen queen's moves are limited to 3 squares</p>
+                <p id='70b'>remove 1 bishop add 6 pawns</p>
+                <p id='71b'>remove 1 bishop add 6 pawns</p>
+                <p id='72b'><br></p>
+                <p id='72b'>add 2 pawns add 1 rook rook: -2 hp</p>
+                <p id='73b'>add 1 pawn pawns can move 2 squares on their first move</p>
+                <p id='74b'>add 1 pawn<br>knights have a shield that absorbs all incoming damage on a sinle turn</p>
+                <p id='75b'>pawn: +1 speed<br>bishop: +1 speed<br>flip card if there's no bishop on the board</p>
+                <p id='76b'>add 1 pawn<br>pawns can move / attack in 4 directions</p>
+                <p id='77b'>add 1 rook gain 2 ammo each time you kill a rook</p>
+                <p id='78b'>remove 1 knight add 2 pawns pawn: +1 speed</p>
+                <p id='79b'>pawns can't attack diagonally but they can attack the front 2 squares instead pawn: +1 hp</p>
+                <p id='80b'>Bishops can move and attack across any obstacles</p>
+                <p id='81b'>rook: +1 hp<br>king swaps position with a rook whenever he would take damage</p>
+                <p id='82b'>add 1 pawn every 5 turns</p>
+                <p id='83b'>remove 1 king add 1 bishop win if all bishops are dead bishop: +2 hp</p>
+                <p id='84b'>queens: -2 speed<br>queens cant die</p>
+                <p id='85b'>add 2 knights add 1 bishop add 1 rook all pieces: -1 speed</p>
+                <p id='86b'>add 1 bishop bishops can move (not attack) orthoganally</p>
+                <p id='87b'>remove 2 pawns add 1 bishop doubles fire arc for 1 bullet</p>
+                <p id='88b'>add 1 queen</p>
+                <p id='89b'>add 1 rook after 20 turns<br>backups come 1 turn sooner for every piece you kill</p>
+                <p id='90b'>King: +2 hp<br>queen: +1 hp</p>
+                <p id='91b'>add 1 pawn the secret heir replaces the king if he dies</p>
+                <p id='92b'>remove 1 bishop add 1 queen after 10 turns</p>
+                <p id='93b'>-1 firepower on white squares<br>+30 fire arc on black squares</p>
+                <p id='94b'>replace rooks, knights and bishops with a pawn when they die</p>
+                <p id='95b'>remove 1 pawn<br>-3 ammo max<br>-1 grenade</p>
+                <p id='96b'>add 1 queen<br>add 1 extra soul slot</p>
+                <p id='97b'>remove 1 rook<br>king: +1 hp<br>-1 grenade damage<br>pawns: +1 hp<br></p>
+                <p id='100b'><br></p>
+                <p id='101b'>add 1 knight knight can only hit when moving knight: -1 hp</p>
+                <p id='102b'><br></p>
+                <p id='103b'><br></p>
+                <p id='104b'>add 1 knight after 10 turns open a path in the moat</p>
+                <p id='105b'><br></p>
+                <p id='106b'>after killing a pawn, promote another pawn if it's the last one</p>
+                <p id='107b'><br></p>
+                <p id='108b'>add 1 knight every 10 turns</p>
+                <p id='109b'><br></p>
+                <p id='110b'><br></p>
+                <p id='111b'><br></p>
+                <p id='112b'><br></p>
+            </div>
+            <div class="require_contianer"> 
+                <p class="requirements" id='44c'>The moat</p>
+                <p class="requirements" id='67c'>assault</p>
+                <p class="requirements" id='94c'>Black mist</p>
+                <p class="requirements" id='97c'>the moat</p>
+            </div>
+        </div>
+    </body>
+</html>
