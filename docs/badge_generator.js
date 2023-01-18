@@ -98,11 +98,11 @@ var bullets = [
 function enable_bulletp(id) {
     if (bullets[id-1].enabled == true) {
         document.getElementById(`bullet_${id}`).src = "images/bullet_blank.png"
-        bullets[id-1].enabled == false
+        bullets[id-1].enabled = false
     }
     else {
         document.getElementById(`bullet_${id}`).src = "images/bullet.png"
-        bullets[id-1].enabled == true
+        bullets[id-1].enabled = true
     }
 }
 
