@@ -84,16 +84,25 @@ function click_pfp() {
     document.getElementById("pfpclick").click();
 }
 
-function enable_bulletp(id) {
-    has = document.getElementById(`bullet_${id}`).src
-    target = has.substring(37)
+var bullets = [
+    {item:1,enabled:true},
+    {item:2,enabled:true},
+    {item:3,enabled:true},
+    {item:4,enabled:true},
+    {item:5,enabled:true},
+    {item:6,enabled:true},
+    {item:7,enabled:true},
+    {item:8,enabled:true}
+]
 
-    if (target == "images/bullet.png") {
-        console.log(id)
-        document.getElementById(`bullet_${id}`).src = "images/bullet_empty.png";
+function enable_bulletp(id) {
+    if (bullets[id-1].enabled == true) {
+        document.getElementById(`bullet_${id}`).src = "images/bullet_blank.png"
+        bullets[id-1].enabled == false
     }
     else {
-        document.getElementById(`bullet_${id}`).src = "images/bullet.png";
+        document.getElementById(`bullet_${id}`).src = "images/bullet.png"
+        bullets[id-1].enabled == true
     }
 }
 
