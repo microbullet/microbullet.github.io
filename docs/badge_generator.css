@@ -1,0 +1,121 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e1529;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83769c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d2b53;
+}
+
+img {
+    display: block;
+    image-rendering: pixelated;
+}
+
+body {
+    background-color: #0e1529;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 104px;
+    font-family: 'pico-8', 'serif';
+    text-transform: uppercase;
+}
+
+input[type=text] {
+    color:#ffccaa;
+    background-color: #1d2b53;
+    border: none;
+    font-family: 'pico-8', 'serif';
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+input[type=text]:focus {
+    background-color: #0e1529;
+}
+
+p {
+    color: #83769c;
+}
+
+select {
+    background-color: #0e1529;
+    border: #0e1529;
+}
+select:focus {
+    background-color: #0e1529;
+    border: #0e1529;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'pico-8';
+    src: url(PICO-8\ mono.ttf);
+}
+
+.images {
+    margin: auto;
+    width: 100%;
+}
+
+.jobs {
+    background-image: url(images/jobs_blank.png);
+    width: 488px;height: 244px;
+}
+
+.acolades {
+    background-image: url(images/badges_blank.png);
+    width: 332px;height: 300px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    margin: 6px;
+}
+
+.bottom {
+    width: 100%;
+    height: 40px;
+}
+
+.left {
+    margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.storage {
+    opacity: 0%;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="badge_generator.css">
+        <script type="text/javascript" src="badge_generator.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="left">
+                <img src="images/template.png" alt="template" width=540 height=584>
+                <form id="myform" action="" method="">
+                    <input type="text" style="position: relative;top: -537px;left: 210px;width: 290px;"/><br>
+                    <input type="text" style="position: relative;top: -531px;left: 226px;width: 274px;"/><br>
+                    <input type="text" style="position: relative;top: -525px;left: 200px;width: 300px;"/><br>
+                    <input type="text" style="position: relative;top: -519px;left: 242px;width: 258px;"/><br>
+                    <button type="button" onclick="show_jobs()" style="position: relative;top: -480px;left: 96px;width: 60px;height: 60px;"><img src="images/jobs_list.png"></button>
+                    <button id="badge_button" type="button" onclick="show_acolades()" style="position: relative;top: -540px;left: -36px;width: 60px;height: 60px;"><img id="badge" src="images/plus.png"></button>
+                    <div id="jobs" class="jobs" style="position: relative;top: -480px;left: 96px;visibility: hidden;z-index: 1;">
+                        <button onclick="change_job(1)" type="button" style="position: relative;top: 16px;left: 8px;"><img id="job_1" src="images/job_1.png"></button>
+                        <button onclick="change_job(2)" type="button" style="position: relative;top: 16px;left: -4px"><img id="job_2" src="images/job_2.png"></button>
+                        <button onclick="change_job(3)" type="button" style="position: relative;top: 24px;left: 8px"><img id="job_3" src="images/job_3.png"></button>
+                        <button onclick="change_job(4)" type="button" style="position: relative;top: 24px;left: -4px"><img id="job_4" src="images/job_4.png"></button>
+                        <button onclick="change_job(5)" type="button" style="position: relative;top: 32px;left: 8px"><img id="job_5" src="images/job_5.png"></button>
+                        <button onclick="change_job(6)" type="button" style="position: relative;top: 32px;left: -4px"><img id="job_6" src="images/job_6.png"></button>
+                    </div>
+                    <div class="slots">
+                        <img style="position: relative;top: -844px;left: 96px;" id="job_slot_1" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -904px;left: 152px;" id="job_slot_2" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -964px;left: 208px;" id="job_slot_3" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -1024px;left: 264px;" id="job_slot_4" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -1084px;left: 320px;" id="job_slot_5" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -1144px;left: 376px;" id="job_slot_6" src="images/job_small_blank.png">
+                    </div>  
+                    <div id="acolades" class="acolades" style="position: relative;top: -1208px;left: 104px;visibility: hidden;z-index: 1;">
+                        <button onclick="change_badge(1)" class="badge" type="button" style="position: relative;top: 44px;left: 184px"><img src="images/badge_1.png"></button>
+                        <button onclick="change_badge(2)" class="badge" type="button" style="position: relative;top: 108px;left: 108px"><img src="images/badge_2.png"></button>
+                        <button onclick="change_badge(3)" class="badge" type="button" style="position: relative;top: 196px;left: 32px"><img src="images/badge_3.png"></button>
+                        <button onclick="change_badge(4)" class="badge" type="button" style="position: relative;top: 44px;left: 28px"><img src="images/badge_4.png"></button>
+                        <button onclick="change_badge(5)" class="badge" type="button" style="position: relative;top: 24px;left: 256px"><img src="images/badge_5.png"></button>
+                        <button onclick="change_badge(6)" class="badge" type="button" style="position: relative;top: 112px;left: 180px"><img src="images/badge_6.png"></button>
+                    </div>
+                    <button onclick="click_pfp()" type="button" style   ="position: relative;top: -1656px;left: 40px;"><img id="pfp" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
+                    <input id="pfpclick" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile()">
+                    <button type="button" onclick="show_jobs()" style="position: relative;top: -1560px;left: -104px;width: 340px;height: 60px;"></button><br>
+                    <input type="text" style="position: relative;top: -1437px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1435px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1433px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1431px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1429px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1427px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1425px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1423px;left: 50px;width: 449px;"/><br>
+                    <button onclick="enable_bulletp(1)" type="button" style="position: relative;top: -1612px;left: 36px;"><img id="bullet_1"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(2)" type="button" style="position: relative;top: -1608px;left: 36px;"><img id="bullet_2"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(3)" type="button" style="position: relative;top: -1604px;left: 36px;"><img id="bullet_3"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(4)" type="button" style="position: relative;top: -1600px;left: 36px;"><img id="bullet_4"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(5)" type="button" style="position: relative;top: -1596px;left: 36px;"><img id="bullet_5"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(6)" type="button" style="position: relative;top: -1592px;left: 36px;"><img id="bullet_6"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(7)" type="button" style="position: relative;top: -1588px;left: 36px;"><img id="bullet_7"  src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(8)" type="button" style="position: relative;top: -1584px;left: 36px;"><img id="bullet_8"  src="images/bullet.png" alt=""></button><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
