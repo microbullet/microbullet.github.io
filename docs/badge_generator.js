@@ -99,10 +99,12 @@ function enable_bulletp(id) {
     if (bullets[id-1].enabled == true) {
         document.getElementById(`bullet_${id}`).src = "images/bullet_blank.png"
         bullets[id-1].enabled = false
+        console.log("disabled")
     }
     else {
         document.getElementById(`bullet_${id}`).src = "images/bullet.png"
         bullets[id-1].enabled = true
+        console.log("enabled")
     }
 }
 
