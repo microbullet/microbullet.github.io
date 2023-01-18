@@ -24,7 +24,7 @@ function show_acolades() {
             document.getElementById("jobs").style.visibility = "hidden";
         }
         document.getElementById("acolades").style.visibility = "visible";
-        occupied = true;
+        occupied = true;        
     }
     else {
         document.getElementById("acolades").style.visibility = "hidden";
@@ -86,7 +86,7 @@ function click_pfp() {
 
 function enable_bulletp(id) {
     has = document.getElementById(`bullet_${id}`).src
-    target = has.substring(77)
+    target = has.substring(37)
 
     if (target == "images/bullet.png") {
         console.log(id)
