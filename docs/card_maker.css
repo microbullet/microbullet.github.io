@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e1529;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83769c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d2b53;
+}
+
+body {
+    background-color: #0e1529;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 104px;
+    font-family: 'pico-8', 'serif';
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'pico-8';
+    src: url(PICO-8\ mono.ttf);
+}
