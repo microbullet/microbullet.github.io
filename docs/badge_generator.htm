@@ -7,9 +7,10 @@
     </head>
     <body>
         <div class="flex-container">
-            <div class="left">
-                <img src="images/template.png" alt="template" width=540 height=584>
-                <form id="myform" action="" method="">
+            <div class="middle">
+                <img src="images/pamphlet_template.png" alt="template" height="588" width="">
+                
+                <form id="myform" action="" method="" style="position: relative;top: -4px">
                     <input type="text" style="position: relative;top: -537px;left: 210px;width: 290px;"/><br>
                     <input type="text" style="position: relative;top: -531px;left: 226px;width: 274px;"/><br>
                     <input type="text" style="position: relative;top: -525px;left: 200px;width: 300px;"/><br>
@@ -40,15 +41,15 @@
                         <button onclick="change_badge(5)" class="badge" type="button" style="position: relative;top: 24px;left: 256px"><img src="images/badge_5.png"></button>
                         <button onclick="change_badge(6)" class="badge" type="button" style="position: relative;top: 112px;left: 180px"><img src="images/badge_6.png"></button>
                     </div>
-                    <button onclick="click_pfp()" type="button" style   ="position: relative;top: -1656px;left: 40px;"><img id="pfp" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
-                    <input id="pfpclick" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile()">
+                    <button onclick="click_pfp(1)" type="button" style   ="position: relative;top: -1656px;left: 40px;"><img id="pfp1" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
+                    <input id="pfpclick1" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(1)">
                     <button type="button" onclick="show_jobs()" style="position: relative;top: -1560px;left: -104px;width: 340px;height: 60px;"></button><br>
                     <input type="text" style="position: relative;top: -1437px;left: 50px;width: 449px;"/><br>
                     <input type="text" style="position: relative;top: -1435px;left: 50px;width: 449px;"/><br>
                     <input type="text" style="position: relative;top: -1433px;left: 50px;width: 449px;"/><br>
                     <input type="text" style="position: relative;top: -1431px;left: 50px;width: 449px;"/><br>
                     <input type="text" style="position: relative;top: -1429px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1427px;left: 50px;width: 449px;"/><br>
+                    <input type="text" style="position: relative;top: -1427px;left: 50px;width: 449px;"/>   <br>
                     <input type="text" style="position: relative;top: -1425px;left: 50px;width: 449px;"/><br>
                     <input type="text" style="position: relative;top: -1423px;left: 50px;width: 449px;"/><br>
                     <button onclick="enable_bulletp(1)" type="button" style="position: relative;top: -1612px;left: 36px;"><img id="bullet_1" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
@@ -59,6 +60,53 @@
                     <button onclick="enable_bulletp(6)" type="button" style="position: relative;top: -1592px;left: 36px;"><img id="bullet_6" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                     <button onclick="enable_bulletp(7)" type="button" style="position: relative;top: -1588px;left: 36px;"><img id="bullet_7" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                     <button onclick="enable_bulletp(8)" type="button" style="position: relative;top: -1584px;left: 36px;"><img id="bullet_8" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="click_pfp(2)" type="button" style="position: relative;top: -2124px;left: 564px;"><img id="pfp2" style="width: 468px;height: 532px;position: relative;top: 8px;left: 8px;" src="images/pfp_blank_big_empty.png"><img src="images/pfp_blank_big.png" style="position: relative;top: -532px;width: 484px;height: 548px;"></button>
+                    <input id="pfpclick2" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
+                    <input type="text" style="position: relative;top: -3176px;left: 590px;width: 393px;"/><br>
+                    <input type="text" style="position: relative;top: -3146px;left: 1208px;width: 374px;"/><br>
+                    <div class="phppot-container">
+                        <h1>How to Capture Screenshot of Page using JavaScript</h1>
+                        <p>
+                            <button id="capture-screenshot" type="button" style="position: relative;top: -3000px;">Capture Screenshot</button>
+                        </p>
+                    </div>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+                    <script type="text/javascript">  
+                        $('#capture-screenshot').click(function() {
+                            const screenshotTarget = document.body;
+                            html2canvas(screenshotTarget).then(canvas => {
+                                // to image as png use below line
+                                // const base64image = canvas.toDataURL("image/png");
+                                // show the image in window use below line
+                                // window.location.href = base64image;
+                                
+                                // screenshot appended to the body as canvas
+                                document.body.appendChild(canvas);  
+                                dataURL = canvas.toDataURL();  
+                                // to print the screenshot in console use below line
+                                // console.log(dataURL);
+                                
+                                // following line is optional and it is to save the screenshot
+                                // on the server side. It initiates an ajax call
+                                pushScreenshotToServer(dataURL); 
+                            });  
+                        });
+                    
+                        function pushScreenshotToServer(dataURL) {  
+                            $.ajax({ 
+                                url: "push-screenshot.php",  
+                                type: "POST",  
+                                data: {  
+                                    image: dataURL  
+                                },  
+                                dataType: "html", 
+                                success: function() {  
+                                    console.log('Screenshot pushed to server.');
+                                }  
+                            });  
+                        }  
+                    </script>
                 </form>
             </div>
         </div>

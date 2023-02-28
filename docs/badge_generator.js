@@ -80,8 +80,8 @@ function change_job(job_value) {
     }
 }
 
-function click_pfp() {
-    document.getElementById("pfpclick").click();
+function click_pfp(id) {
+    document.getElementById(`pfpclick${id}`).click();
 }
 
 var bullets = [
@@ -97,11 +97,13 @@ var bullets = [
 
 function enable_bulletp(id) {
     if (bullets[id-1].enabled == true) {
+        console.log("true")
         document.getElementById(`bullet_${id}`).src = "images/bullet_blank.png"
         bullets[id-1].enabled = false
         console.log("disabled")
     }
     else {
+        console.log("false")
         document.getElementById(`bullet_${id}`).src = "images/bullet.png"
         bullets[id-1].enabled = true
         console.log("enabled")
@@ -110,12 +112,10 @@ function enable_bulletp(id) {
 
 // theft from a stack overflow user :)
 
-function previewFile() {
-    var preview = document.querySelector('#pfp');
-    var file    = document.querySelector('input[type=file]').files[0];
+function previewFile(id) {
+    var preview = document.querySelector(`#pfp${id}`);
+    var file    = document.querySelector(`input[type=file]#pfpclick${id}`).files[0];
     var reader  = new FileReader();
-    
-    console.log(preview)
 
     reader.onloadend = function () {
         preview.src = reader.result;
