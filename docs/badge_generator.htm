@@ -4,10 +4,12 @@
         <link rel="stylesheet" href="badge_generator.css">
         <script type="text/javascript" src="badge_generator.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="html2canvas.js"></script>
+        <script type="text/javascript" src="dom-to-image.js"></script>
     </head>
     <body>
         <div class="flex-container">
-            <div class="middle">
+            <div class="middle" id="container">
                 <img src="images/pamphlet_template.png" alt="template" height="588" width="">
                 
                 <form id="myform" action="" method="" style="position: relative;top: -4px">
@@ -64,50 +66,51 @@
                     <input id="pfpclick2" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
                     <input type="text" style="position: relative;top: -3176px;left: 590px;width: 393px;"/><br>
                     <input type="text" style="position: relative;top: -3146px;left: 1208px;width: 374px;"/><br>
-                    <div class="phppot-container">
-                        <h1>How to Capture Screenshot of Page using JavaScript</h1>
-                        <p>
-                            <button id="capture-screenshot" type="button" style="position: relative;top: -3000px;">Capture Screenshot</button>
-                        </p>
-                    </div>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-                    <script type="text/javascript">  
-                        $('#capture-screenshot').click(function() {
-                            const screenshotTarget = document.body;
-                            html2canvas(screenshotTarget).then(canvas => {
-                                // to image as png use below line
-                                // const base64image = canvas.toDataURL("image/png");
-                                // show the image in window use below line
-                                // window.location.href = base64image;
-                                
-                                // screenshot appended to the body as canvas
-                                document.body.appendChild(canvas);  
-                                dataURL = canvas.toDataURL();  
-                                // to print the screenshot in console use below line
-                                // console.log(dataURL);
-                                
-                                // following line is optional and it is to save the screenshot
-                                // on the server side. It initiates an ajax call
-                                pushScreenshotToServer(dataURL); 
-                            });  
-                        });
-                    
-                        function pushScreenshotToServer(dataURL) {  
-                            $.ajax({ 
-                                url: "push-screenshot.php",  
-                                type: "POST",  
-                                data: {  
-                                    image: dataURL  
-                                },  
-                                dataType: "html", 
-                                success: function() {  
-                                    console.log('Screenshot pushed to server.');
-                                }  
-                            });  
-                        }  
-                    </script>
+                    <input type="text" style="position: relative;top: -3084px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3082px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3080px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3078px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3076px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3074px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3072px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3070px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3068px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3066px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3064px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3062px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3060px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3058px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3056px;left: 1128px;width: 456px;"/><br>
+                    <input type="text" style="position: relative;top: -3054px;left: 1128px;width: 456px;"/><br>
+                    <button onclick="enable_bulletp(9)" type="button" style="position: relative;top: -3435px;left: 1112px;"><img id="bullet_9" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(10)" type="button" style="position: relative;top: -3431px;left: 1112px;"><img id="bullet_10" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(11)" type="button" style="position: relative;top: -3427px;left: 1112px;"><img id="bullet_11" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(12)" type="button" style="position: relative;top: -3423px;left: 1112px;"><img id="bullet_12" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(13)" type="button" style="position: relative;top: -3419px;left: 1112px;"><img id="bullet_13" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(14)" type="button" style="position: relative;top: -3415px;left: 1112px;"><img id="bullet_14" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(15)" type="button" style="position: relative;top: -3411px;left: 1112px;"><img id="bullet_15" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(16)" type="button" style="position: relative;top: -3407px;left: 1112px;"><img id="bullet_16" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(17)" type="button" style="position: relative;top: -3403px;left: 1112px;"><img id="bullet_17" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(18)" type="button" style="position: relative;top: -3399px;left: 1112px;"><img id="bullet_18" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(19)" type="button" style="position: relative;top: -3395px;left: 1112px;"><img id="bullet_19" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(20)" type="button" style="position: relative;top: -3391px;left: 1112px;"><img id="bullet_20" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(21)" type="button" style="position: relative;top: -3387px;left: 1112px;"><img id="bullet_21" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(22)" type="button" style="position: relative;top: -3383px;left: 1112px;"><img id="bullet_22" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(23)" type="button" style="position: relative;top: -3379px;left: 1112px;"><img id="bullet_23" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <button onclick="enable_bulletp(24)" type="button" style="position: relative;top: -3375px;left: 1112px;"><img id="bullet_24" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                 </form>
+                <script>
+                    var node = document.getElementById('container');
+                
+                    domtoimage.toPng(node).then(function (dataUrl) {
+                        var img = new Image();
+                        img.src = dataUrl;
+                        document.body.appendChild(img);
+                    }).catch(function (error) {
+                        console.error('oops, something went wrong!', error);
+                    });
+                </script>
+                <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br>
             </div>
         </div>
     </body>

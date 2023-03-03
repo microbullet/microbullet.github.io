@@ -92,7 +92,22 @@ var bullets = [
     {item:5,enabled:true},
     {item:6,enabled:true},
     {item:7,enabled:true},
-    {item:8,enabled:true}
+    {item:8,enabled:true},
+    {item:9,enabled:true},
+    {item:10,enabled:true},
+    {item:11,enabled:true},
+    {item:12,enabled:true},
+    {item:13,enabled:true},
+    {item:14,enabled:true},
+    {item:15,enabled:true},
+    {item:16,enabled:true},
+    {item:17,enabled:true},
+    {item:18,enabled:true},
+    {item:19,enabled:true},
+    {item:20,enabled:true},
+    {item:21,enabled:true},
+    {item:22,enabled:true},
+    {item:23,enabled:true}
 ]
 
 function enable_bulletp(id) {
@@ -126,4 +141,4 @@ function previewFile(id) {
     } else {
         preview.src = "";
     }
-  }
+}
