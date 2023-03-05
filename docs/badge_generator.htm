@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="badge_generator.css">
         <script type="text/javascript" src="badge_generator.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="html2canvas.js"></script>
         <script type="text/javascript" src="dom-to-image.js"></script>
     </head>
     <body>
@@ -62,7 +61,7 @@
                     <button onclick="enable_bulletp(6)" type="button" style="position: relative;top: -1592px;left: 36px;"><img id="bullet_6" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                     <button onclick="enable_bulletp(7)" type="button" style="position: relative;top: -1588px;left: 36px;"><img id="bullet_7" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                     <button onclick="enable_bulletp(8)" type="button" style="position: relative;top: -1584px;left: 36px;"><img id="bullet_8" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="click_pfp(2)" type="button" style="position: relative;top: -2124px;left: 564px;"><img id="pfp2" style="width: 468px;height: 532px;position: relative;top: 8px;left: 8px;" src="images/pfp_blank_big_empty.png"><img src="images/pfp_blank_big.png" style="position: relative;top: -532px;width: 484px;height: 548px;"></button>
+                    <button onclick="click_pfp(2)" type="button" style="position: relative;top: -2124px;left: 564px;" height="548px"><img id="pfp2" style="width: 468px;height: 532px;position: relative;top: 8px;left: 8px;" src="images/pfp_blank_big_empty.png"><img src="images/pfp_blank_big.png" style="position: relative;width: 484px;"></button>
                     <input id="pfpclick2" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
                     <input type="text" style="position: relative;top: -3176px;left: 590px;width: 393px;"/><br>
                     <input type="text" style="position: relative;top: -3146px;left: 1208px;width: 374px;"/><br>
@@ -99,18 +98,20 @@
                     <button onclick="enable_bulletp(23)" type="button" style="position: relative;top: -3379px;left: 1112px;"><img id="bullet_23" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                     <button onclick="enable_bulletp(24)" type="button" style="position: relative;top: -3375px;left: 1112px;"><img id="bullet_24" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
                 </form>
+                <input type='button' id='but_screenshot' value='Take screenshot' onclick='capture();'><br>
                 <script>
                     var node = document.getElementById('container');
-                
-                    domtoimage.toPng(node).then(function (dataUrl) {
-                        var img = new Image();
-                        img.src = dataUrl;
-                        document.body.appendChild(img);
-                    }).catch(function (error) {
-                        console.error('oops, something went wrong!', error);
-                    });
+
+                    function capture(){
+                        domtoimage.toPng(node).then(function (dataUrl) {
+                            var img = new Image();
+                            img.src = dataUrl;
+                            document.body.appendChild(img);
+                        }).catch(function (error) {
+                            console.error('oops, something went wrong!', error);
+                        });
+                    }
                 </script>
-                <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br>
             </div>
         </div>
     </body>

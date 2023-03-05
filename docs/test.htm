@@ -1,24 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-   <head>
-      <script type="text/javascript" src="html2canvas.js"></script>
-   </head>
-   <body>
-      <h1>Take screenshot of webpage with html2canvas</h1>
-      <div class="container" id='container' >
-         <img src='images/badge_1.png' width='100' height='100'>
-         <img src='images/badge_2.png' width='100' height='100'>
-         <img src='images/badge_3.png' width='100' height='100'>
-      </div>
-      <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+    <head>
+        <link rel="stylesheet" href="badge_generator.css">
+        <script type="text/javascript" src="badge_generator.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="dom-to-image.js"></script>
+    </head>
+<div id="container" height="300px">
+    <p>Some HTML content or images.</p>
+    <p>Some HTML content or images.</p>
+    <form>
+        <input>
+    </form>
+</div>
 
-      <!-- Script -->
-      <script type='text/javascript'>
-        function screenshot(){
-           html2canvas(document.getElementById('container')).then(function(canvas) {
-              document.body.appendChild(canvas);
-           });
-        }
-      </script>
-   </body>
+<button onclick="capture()">capture</button>
+
+<script>
+    
+</script>
 </html>
