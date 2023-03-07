@@ -21,7 +21,7 @@ img {
 
 body {
     background-color: #0e1529;
-    overflow-y: hidden;
+    /*overflow-y: hidden; */
     font-family: 'pico-8', 'serif';
     text-transform: uppercase;
 }
@@ -55,11 +55,31 @@ select:focus {
 button {
     all: unset;
     cursor: pointer;
-}
+    display: inline-block;
+}   
 
 @font-face {
     font-family: 'pico-8';
     src: url(PICO-8\ mono.ttf);
+}
+
+.bullet {
+    position: relative;
+    left: 36px;
+}
+
+.bullet_i{
+    position: relative;
+    width: 12px;height: 20px;
+}
+
+.bullet_t, .bullet_t_2  {
+    position: relative;
+    left: 39px;width: 449px;
+}
+
+.bullet_t_2 {
+    width: 456px;
 }
 
 .images {

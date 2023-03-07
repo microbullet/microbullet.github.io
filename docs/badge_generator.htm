@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <link rel="stylesheet" href="badge_generator.css">
         <script type="text/javascript" src="badge_generator.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <style type="text/css" id="operaUserStyle"></style>
         <script type="text/javascript" src="dom-to-image.js"></script>
     </head>
-    <body>
+    <body style="height: auto;">
         <div class="flex-container">
-            <div class="middle" id="container">
+            <div class="middle" id="container" style="height: 590px;">
                 <img src="images/pamphlet_template.png" alt="template" height="588" width="">
-                
-                <form id="myform" action="" method="" style="position: relative;top: -4px">
-                    <input type="text" style="position: relative;top: -537px;left: 210px;width: 290px;"/><br>
-                    <input type="text" style="position: relative;top: -531px;left: 226px;width: 274px;"/><br>
-                    <input type="text" style="position: relative;top: -525px;left: 200px;width: 300px;"/><br>
-                    <input type="text" style="position: relative;top: -519px;left: 242px;width: 258px;"/><br>
-                    <button type="button" onclick="show_jobs()" style="position: relative;top: -480px;left: 96px;width: 60px;height: 60px;"><img src="images/jobs_list.png"></button>
-                    <button id="badge_button" type="button" onclick="show_acolades()" style="position: relative;top: -540px;left: -36px;width: 60px;height: 60px;"><img id="badge" src="images/plus.png"></button>
-                    <div id="jobs" class="jobs" style="position: relative;top: -480px;left: 96px;visibility: hidden;z-index: 1;">
+                <form id="myform" style="position: relative;top: -588px; height: 588px;">
+                    <div style="position: relative;top: 47px;left: 210px;width: 290px;">
+                        <input type="text" style="position: relative;top: 0px;left: 0px;width: 290px;"><br>
+                        <input type="text" style="position: relative;top: 6px;left: 16px;width: 274px;"><br>
+                        <input type="text" style="position: relative;top: 12px;left: -16px;width: 306px;"><br>
+                        <input type="text" style="position: relative;top: 18px;left: 32px;width: 258px;"><br>
+                    </div>
+                    <button type="button" onclick="show_jobs()" style="position: relative;top: 104px;left: 96px;width: 60px;height: 60px;"><img src="images/jobs_list.png"></button>
+                    <button id="badge_button" type="button" onclick="show_acolades()" style="position: relative;top: 44px;left: -36px;width: 60px;height: 60px;"><img id="badge" src="images/plus.png"></button>
+                    <div id="jobs" class="jobs" style="position: relative;top: 104px;left: 96px;visibility: hidden;z-index: 1;">
                         <button onclick="change_job(1)" type="button" style="position: relative;top: 16px;left: 8px;"><img id="job_1" src="images/job_1.png"></button>
                         <button onclick="change_job(2)" type="button" style="position: relative;top: 16px;left: -4px"><img id="job_2" src="images/job_2.png"></button>
                         <button onclick="change_job(3)" type="button" style="position: relative;top: 24px;left: 8px"><img id="job_3" src="images/job_3.png"></button>
@@ -34,7 +36,7 @@
                         <img style="position: relative;top: -1084px;left: 320px;" id="job_slot_5" src="images/job_small_blank.png">
                         <img style="position: relative;top: -1144px;left: 376px;" id="job_slot_6" src="images/job_small_blank.png">
                     </div>  
-                    <div id="acolades" class="acolades" style="position: relative;top: -1208px;left: 104px;visibility: hidden;z-index: 1;">
+                    <div id="acolades" class="acolades" style="position: relative;top: -624px;left: 104px;visibility: hidden;z-index: 1;">
                         <button onclick="change_badge(1)" class="badge" type="button" style="position: relative;top: 44px;left: 184px"><img src="images/badge_1.png"></button>
                         <button onclick="change_badge(2)" class="badge" type="button" style="position: relative;top: 108px;left: 108px"><img src="images/badge_2.png"></button>
                         <button onclick="change_badge(3)" class="badge" type="button" style="position: relative;top: 196px;left: 32px"><img src="images/badge_3.png"></button>
@@ -42,63 +44,53 @@
                         <button onclick="change_badge(5)" class="badge" type="button" style="position: relative;top: 24px;left: 256px"><img src="images/badge_5.png"></button>
                         <button onclick="change_badge(6)" class="badge" type="button" style="position: relative;top: 112px;left: 180px"><img src="images/badge_6.png"></button>
                     </div>
-                    <button onclick="click_pfp(1)" type="button" style   ="position: relative;top: -1656px;left: 40px;"><img id="pfp1" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
-                    <input id="pfpclick1" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(1)">
-                    <button type="button" onclick="show_jobs()" style="position: relative;top: -1560px;left: -104px;width: 340px;height: 60px;"></button><br>
-                    <input type="text" style="position: relative;top: -1437px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1435px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1433px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1431px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1429px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1427px;left: 50px;width: 449px;"/>   <br>
-                    <input type="text" style="position: relative;top: -1425px;left: 50px;width: 449px;"/><br>
-                    <input type="text" style="position: relative;top: -1423px;left: 50px;width: 449px;"/><br>
-                    <button onclick="enable_bulletp(1)" type="button" style="position: relative;top: -1612px;left: 36px;"><img id="bullet_1" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(2)" type="button" style="position: relative;top: -1608px;left: 36px;"><img id="bullet_2" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(3)" type="button" style="position: relative;top: -1604px;left: 36px;"><img id="bullet_3" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(4)" type="button" style="position: relative;top: -1600px;left: 36px;"><img id="bullet_4" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(5)" type="button" style="position: relative;top: -1596px;left: 36px;"><img id="bullet_5" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(6)" type="button" style="position: relative;top: -1592px;left: 36px;"><img id="bullet_6" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(7)" type="button" style="position: relative;top: -1588px;left: 36px;"><img id="bullet_7" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(8)" type="button" style="position: relative;top: -1584px;left: 36px;"><img id="bullet_8" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="click_pfp(2)" type="button" style="position: relative;top: -2124px;left: 564px;" height="548px"><img id="pfp2" style="width: 468px;height: 532px;position: relative;top: 8px;left: 8px;" src="images/pfp_blank_big_empty.png"><img src="images/pfp_blank_big.png" style="position: relative;width: 484px;"></button>
-                    <input id="pfpclick2" type="file" style="position: relative;top: -1656px;left: -60px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
-                    <input type="text" style="position: relative;top: -3176px;left: 590px;width: 393px;"/><br>
-                    <input type="text" style="position: relative;top: -3146px;left: 1208px;width: 374px;"/><br>
-                    <input type="text" style="position: relative;top: -3084px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3082px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3080px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3078px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3076px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3074px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3072px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3070px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3068px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3066px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3064px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3062px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3060px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3058px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3056px;left: 1128px;width: 456px;"/><br>
-                    <input type="text" style="position: relative;top: -3054px;left: 1128px;width: 456px;"/><br>
-                    <button onclick="enable_bulletp(9)" type="button" style="position: relative;top: -3435px;left: 1112px;"><img id="bullet_9" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(10)" type="button" style="position: relative;top: -3431px;left: 1112px;"><img id="bullet_10" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(11)" type="button" style="position: relative;top: -3427px;left: 1112px;"><img id="bullet_11" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(12)" type="button" style="position: relative;top: -3423px;left: 1112px;"><img id="bullet_12" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(13)" type="button" style="position: relative;top: -3419px;left: 1112px;"><img id="bullet_13" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(14)" type="button" style="position: relative;top: -3415px;left: 1112px;"><img id="bullet_14" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(15)" type="button" style="position: relative;top: -3411px;left: 1112px;"><img id="bullet_15" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(16)" type="button" style="position: relative;top: -3407px;left: 1112px;"><img id="bullet_16" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(17)" type="button" style="position: relative;top: -3403px;left: 1112px;"><img id="bullet_17" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(18)" type="button" style="position: relative;top: -3399px;left: 1112px;"><img id="bullet_18" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(19)" type="button" style="position: relative;top: -3395px;left: 1112px;"><img id="bullet_19" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(20)" type="button" style="position: relative;top: -3391px;left: 1112px;"><img id="bullet_20" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(21)" type="button" style="position: relative;top: -3387px;left: 1112px;"><img id="bullet_21" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(22)" type="button" style="position: relative;top: -3383px;left: 1112px;"><img id="bullet_22" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(23)" type="button" style="position: relative;top: -3379px;left: 1112px;"><img id="bullet_23" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
-                    <button onclick="enable_bulletp(24)" type="button" style="position: relative;top: -3375px;left: 1112px;"><img id="bullet_24" style="width: 12px;height: 20px;" src="images/bullet.png" alt=""></button><br>
+                    <div style="position: relative;top: -1072px;left: 40px;width: 500px;">
+                        <button onclick="click_pfp(1)" type="button"><img id="pfp1" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
+                        <input id="pfpclick1" type="file" style="position: relative;left: -100px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(1)">
+                    </div>
+                    <div style="position: relative; top: -852px;">
+                        <button onclick="enable_bulletp(1)" class="bullet" type="button"><img class="bullet_i" id="bullet_1" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(2)" class="bullet" type="button"><img class="bullet_i" id="bullet_2" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(3)" class="bullet" type="button"><img class="bullet_i" id="bullet_3" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(4)" class="bullet" type="button"><img class="bullet_i" id="bullet_4" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(5)" class="bullet" type="button"><img class="bullet_i" id="bullet_5" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(6)" class="bullet" type="button"><img class="bullet_i" id="bullet_6" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(7)" class="bullet" type="button"><img class="bullet_i" id="bullet_7" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(8)" class="bullet" type="button"><img class="bullet_i" id="bullet_8" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                    </div>
+                    <div class="pfp2" style="position: relative;top: -1380px;left: 556px;width: 484px;height: 548px;">
+                        <img id="pfp2" src="images/pfp_blank_big_empty.png" style="position: relative;left: 16px;top: 8px;width: 468px;height: 532px;">
+                        <button onclick="click_pfp(2)" type="button" style="position: relative;height: 548px;left: 8px;top: -532px;">
+                            <img style="width: 484px;height: 548px;position: relative;" src="images/pfp_blank_big.png">
+                        </button>
+                        <input id="pfpclick2" type="file" style="position: relative;top: -808px;left: -184px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
+                    </div>
+                    <div style="position: relative;top: -1921px;left: 1192px;width: 392px;">
+                        <input type="text" style="width: 392px;"><br>
+                        <input type="text" style="position: relative;top: 30px;left: 14px;width: 378px;">
+                    </div>
+                    <div style="position: relative;top: -1829px;left: 1076px;width: 480px;">
+                        <button onclick="enable_bulletp(9)" class="bullet" type="button"><img class="bullet_i" id="bullet_9" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(10)" class="bullet" type="button"><img class="bullet_i" id="bullet_10" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(11)" class="bullet" type="button"><img class="bullet_i" id="bullet_11" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(12)" class="bullet" type="button"><img class="bullet_i" id="bullet_12" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(13)" class="bullet" type="button"><img class="bullet_i" id="bullet_13" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(14)" class="bullet" type="button"><img class="bullet_i" id="bullet_14" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(15)" class="bullet" type="button"><img class="bullet_i" id="bullet_15" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(16)" class="bullet" type="button"><img class="bullet_i" id="bullet_16" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(17)" class="bullet" type="button"><img class="bullet_i" id="bullet_17" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(18)" class="bullet" type="button"><img class="bullet_i" id="bullet_18" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(19)" class="bullet" type="button"><img class="bullet_i" id="bullet_19" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(20)" class="bullet" type="button"><img class="bullet_i" id="bullet_20" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(21)" class="bullet" type="button"><img class="bullet_i" id="bullet_21" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(22)" class="bullet" type="button"><img class="bullet_i" id="bullet_22" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(23)" class="bullet" type="button"><img class="bullet_i" id="bullet_23" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(24)" class="bullet" type="button"><img class="bullet_i" id="bullet_24" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(25)" class="bullet" type="button"><img class="bullet_i" id="bullet_25" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(26)" class="bullet" type="button"><img class="bullet_i" id="bullet_26" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                    </div>
                 </form>
-                <input type='button' id='but_screenshot' value='Take screenshot' onclick='capture();'><br>
+                <input type="button" id="but_screenshot" value="Take screenshot" onclick="capture();" style="position: relative;top: -1000px;"><br>
                 <script>
                     var node = document.getElementById('container');
 

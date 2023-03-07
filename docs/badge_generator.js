@@ -107,7 +107,10 @@ var bullets = [
     {item:20,enabled:true},
     {item:21,enabled:true},
     {item:22,enabled:true},
-    {item:23,enabled:true}
+    {item:23,enabled:true},
+    {item:24,enabled:true},
+    {item:25,enabled:true},
+    {item:26,enabled:true}
 ]
 
 function enable_bulletp(id) {
