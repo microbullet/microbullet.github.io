@@ -44,7 +44,7 @@
                         <button onclick="change_badge(5)" class="badge" type="button" style="position: relative;top: 24px;left: 256px"><img src="images/badge_5.png"></button>
                         <button onclick="change_badge(6)" class="badge" type="button" style="position: relative;top: 112px;left: 180px"><img src="images/badge_6.png"></button>
                     </div>
-                    <div style="position: relative;top: -1072px;left: 40px;width: 500px;">
+                    <div style="position: relative;top: -1072px;left: 40px;width: 84px;">
                         <button onclick="click_pfp(1)" type="button"><img id="pfp1" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
                         <input id="pfpclick1" type="file" style="position: relative;left: -100px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(1)">
                     </div>
@@ -90,8 +90,9 @@
                         <button onclick="enable_bulletp(26)" class="bullet" type="button"><img class="bullet_i" id="bullet_26" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
                     </div>
                 </form>
-                <input type="button" id="but_screenshot" value="Export" onclick="capture();" style="position: relative;top: -592px;left: 772px;"><br>
-                <script>
+            </div>
+            <input type="button" id="but_screenshot" value="Export" onclick="capture();" style="position: relative;top: -592px;left: 772px;"><br>
+            <script>
                     var node = document.getElementById('container');
 
                     function capture(){
@@ -103,8 +104,7 @@
                             console.error('oops, something went wrong!', error);
                         });
                     }
-                </script>
-            </div>
+            </script>
         </div>
     </body>
 </html>
