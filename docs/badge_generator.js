@@ -33,10 +33,10 @@ function show_acolades() {
 }
 
 function change_badge(badge) {
-    document.getElementById("badge_button").style.top = "-540px";
+    document.getElementById("badge_button").style.top = "44px";
 
     if (badge == 3 || badge == 6) {
-        document.getElementById("badge_button").style.top = "-516px";
+        document.getElementById("badge_button").style.top = "68px";
         console.log("yes");
     }
     document.getElementById("badge").src = `images/badge_blank_${badge}.png`;
