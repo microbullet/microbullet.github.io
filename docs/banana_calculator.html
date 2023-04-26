@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Poisoning</p>
+    <input type="number" id="quantity" name="weight">
+    <select name="select" id="ddlViewBy">
+        <option value="Kg">Kg</option>
+        <option value="Lbs">Lbs</option>
+    </select><br>
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p><br>
+    <br><br>
+    <p>radiation</p>
+    <input type="number" id="quantity2" name="weight">
+    <select name="select" id="ddlViewBy2">
+        <option value="Kg">Kg</option>
+        <option value="Lbs">Lbs</option>
+    </select><br>
+    <button onclick="radcalculate()">Calculate</button>
+    <p id="result2"></p><br>
+    <script>
+        function calculate()
+        {
+            var getValue = document.getElementById('ddlViewBy').selectedOptions[0].value;
+            var weightNum = document.getElementById("quantity").value
+            var bpkg = 2500/450
+            if (getValue == "Lbs")
+            {
+                weightNum = weightNum * 0.45359
+            }
+            document.getElementById("result").innerHTML = Math.ceil(weightNum*bpkg)
+        }
+        function radcalculate()
+        {
+            var getValue = document.getElementById('ddlViewBy2').selectedOptions[0].value;
+            var weightNum = document.getElementById("quantity2").value
+            var bpkg = 50000000
+            if (getValue == "Lbs")
+            {
+                weightNum = weightNum * 0.45359
+            }
+            document.getElementById("result2").innerHTML = Math.ceil(weightNum*bpkg)
+        }
+    </script>
+</body>
+</html>
