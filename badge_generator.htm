@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <link rel="stylesheet" href="badge_generator.css">
+        <script type="text/javascript" src="badge_generator.js"></script>
+        <style type="text/css" id="operaUserStyle"></style>
+        <script type="text/javascript" src="dom-to-image.js"></script>
+    </head>
+    <body style>
+        <div class="flex-container">
+            <div class="middle" id="container" style="height: 590px;">
+                <img src="images/pamphlet_template.png" alt="template" height="588" width="">
+                <form id="myform" style="position: relative;top: -588px; height: 588px;">
+                    <div style="position: relative;top: 47px;left: 210px;width: 290px;">
+                        <input type="text" style="position: relative;top: 0px;left: 0px;width: 290px;"><br>
+                        <input type="text" style="position: relative;top: 6px;left: 16px;width: 274px;"><br>
+                        <input type="text" style="position: relative;top: 12px;left: -16px;width: 306px;"><br>
+                        <input type="text" style="position: relative;top: 18px;left: 32px;width: 258px;"><br>
+                    </div>
+                    <button type="button" onclick="show_jobs()" style="position: relative;top: 104px;left: 96px;width: 60px;height: 60px;"><img src="images/jobs_list.png"></button>
+                    <button id="badge_button" type="button" onclick="show_acolades()" style="position: relative;top: 44px;left: -36px;width: 60px;height: 60px;"><img id="badge" src="images/plus.png"></button>
+                    <div id="jobs" class="jobs" style="position: relative;top: 104px;left: 96px;visibility: hidden;z-index: 1;">
+                        <button onclick="change_job(1)" type="button" style="position: relative;top: 16px;left: 8px;"><img id="job_1" src="images/job_1.png"></button>
+                        <button onclick="change_job(2)" type="button" style="position: relative;top: 16px;left: -4px"><img id="job_2" src="images/job_2.png"></button>
+                        <button onclick="change_job(3)" type="button" style="position: relative;top: 24px;left: 8px"><img id="job_3" src="images/job_3.png"></button>
+                        <button onclick="change_job(4)" type="button" style="position: relative;top: 24px;left: -4px"><img id="job_4" src="images/job_4.png"></button>
+                        <button onclick="change_job(5)" type="button" style="position: relative;top: 32px;left: 8px"><img id="job_5" src="images/job_5.png"></button>
+                        <button onclick="change_job(6)" type="button" style="position: relative;top: 32px;left: -4px"><img id="job_6" src="images/job_6.png"></button>
+                    </div>
+                    <div class="slots">
+                        <img style="position: relative;top: -260px;left: 96px;" id="job_slot_1" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -320px;left: 152px;" id="job_slot_2" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -380px;left: 208px;" id="job_slot_3" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -440px;left: 264px;" id="job_slot_4" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -500px;left: 320px;" id="job_slot_5" src="images/job_small_blank.png">
+                        <img style="position: relative;top: -560px;left: 376px;" id="job_slot_6" src="images/job_small_blank.png">
+                    </div>  
+                    <div id="acolades" class="acolades" style="position: relative;top: -624px;left: 104px;visibility: hidden;z-index: 1;">
+                        <button onclick="change_badge(1)" class="badge" type="button" style="position: relative;top: 44px;left: 184px"><img src="images/badge_1.png"></button>
+                        <button onclick="change_badge(2)" class="badge" type="button" style="position: relative;top: 108px;left: 108px"><img src="images/badge_2.png"></button>
+                        <button onclick="change_badge(3)" class="badge" type="button" style="position: relative;top: 196px;left: 32px"><img src="images/badge_3.png"></button>
+                        <button onclick="change_badge(4)" class="badge" type="button" style="position: relative;top: 44px;left: 28px"><img src="images/badge_4.png"></button>
+                        <button onclick="change_badge(5)" class="badge" type="button" style="position: relative;top: 24px;left: 256px"><img src="images/badge_5.png"></button>
+                        <button onclick="change_badge(6)" class="badge" type="button" style="position: relative;top: 112px;left: 180px"><img src="images/badge_6.png"></button>
+                    </div>
+                    <div style="position: relative;top: -1072px;left: 40px;width: 84px;height: 116px;">
+                        <button onclick="click_pfp(1)" type="button"><img id="pfp1" style="width: 84px;height: 116px;" src="images/pfp_blank.png"></button>
+                        <input id="pfpclick1" type="file" style="position: relative;left: -100px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(1)">
+                    </div>
+                    <div style="position: relative; top: -852px;">
+                        <button onclick="enable_bulletp(1)" class="bullet" type="button"><img class="bullet_i" id="bullet_1" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(2)" class="bullet" type="button"><img class="bullet_i" id="bullet_2" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(3)" class="bullet" type="button"><img class="bullet_i" id="bullet_3" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(4)" class="bullet" type="button"><img class="bullet_i" id="bullet_4" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(5)" class="bullet" type="button"><img class="bullet_i" id="bullet_5" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(6)" class="bullet" type="button"><img class="bullet_i" id="bullet_6" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(7)" class="bullet" type="button"><img class="bullet_i" id="bullet_7" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                        <button onclick="enable_bulletp(8)" class="bullet" type="button"><img class="bullet_i" id="bullet_8" src="images/bullet.png"></button><input type="text" class="bullet_t"><br>
+                    </div>
+                    <div class="pfp2" style="position: relative;top: -1380px;left: 556px;width: 484px;height: 548px;">
+                        <img id="pfp2" src="images/pfp_blank_big_empty.png" style="position: relative;left: 16px;top: 8px;width: 468px;height: 532px;">
+                        <button onclick="click_pfp(2)" type="button" style="position: relative;height: 548px;left: 8px;top: -532px;">
+                            <img style="width: 484px;height: 548px;position: relative;" src="images/pfp_blank_big.png">
+                        </button>
+                        <input id="pfpclick2" type="file" style="position: relative;top: -808px;left: -184px;width: 84px;height: 11px;visibility: hidden;" onchange="previewFile(2)">
+                    </div>
+                    <div style="position: relative;top: -1921px;left: 1192px;width: 392px;">
+                        <input type="text" style="width: 392px;"><br>
+                        <input type="text" style="position: relative;top: 30px;left: 14px;width: 378px;">
+                    </div>
+                    <div style="position: relative;top: -1829px;left: 1076px;width: 480px;">
+                        <button onclick="enable_bulletp(9)" class="bullet" type="button"><img class="bullet_i" id="bullet_9" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(10)" class="bullet" type="button"><img class="bullet_i" id="bullet_10" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(11)" class="bullet" type="button"><img class="bullet_i" id="bullet_11" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(12)" class="bullet" type="button"><img class="bullet_i" id="bullet_12" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(13)" class="bullet" type="button"><img class="bullet_i" id="bullet_13" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(14)" class="bullet" type="button"><img class="bullet_i" id="bullet_14" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(15)" class="bullet" type="button"><img class="bullet_i" id="bullet_15" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(16)" class="bullet" type="button"><img class="bullet_i" id="bullet_16" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(17)" class="bullet" type="button"><img class="bullet_i" id="bullet_17" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(18)" class="bullet" type="button"><img class="bullet_i" id="bullet_18" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(19)" class="bullet" type="button"><img class="bullet_i" id="bullet_19" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(20)" class="bullet" type="button"><img class="bullet_i" id="bullet_20" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(21)" class="bullet" type="button"><img class="bullet_i" id="bullet_21" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(22)" class="bullet" type="button"><img class="bullet_i" id="bullet_22" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(23)" class="bullet" type="button"><img class="bullet_i" id="bullet_23" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(24)" class="bullet" type="button"><img class="bullet_i" id="bullet_24" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(25)" class="bullet" type="button"><img class="bullet_i" id="bullet_25" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                        <button onclick="enable_bulletp(26)" class="bullet" type="button"><img class="bullet_i" id="bullet_26" src="images/bullet.png"></button><input type="text" class="bullet_t_2"><br>
+                    </div>
+                </form>
+            </div>
+            <input type="button" id="but_screenshot" value="Export" onclick="capture();" style="position: relative;top: -592px;left: 772px;"><br>
+            <script>
+                    var node = document.getElementById('container');
+
+                    function capture(){
+                        domtoimage.toPng(node).then(function (dataUrl) {
+                            var img = new Image();
+                            img.src = dataUrl;
+                            document.body.appendChild(img);
+                        }).catch(function (error) {
+                            console.error('oops, something went wrong!', error);
+                        });
+                    }
+            </script>
+        </div>
+    </body>
+</html>

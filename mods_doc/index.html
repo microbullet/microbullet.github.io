@@ -1,0 +1,6485 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../lore/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+    
+    
+      
+        <title>Modding - SGK Ultimate Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bd3936ea.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modding" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SGK Ultimate Guide" class="md-header__button md-logo" aria-label="SGK Ultimate Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SGK Ultimate Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modding
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../guides/" class="md-tabs__link">
+        
+  
+    
+  
+  Guides
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../lore/" class="md-tabs__link">
+        
+  
+    
+  
+  Lore
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Modding
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SGK Ultimate Guide" class="md-nav__button md-logo" aria-label="SGK Ultimate Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SGK Ultimate Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Modding
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Modding
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#things-that-you-absolutely-need-to-have-before-you-begin-modding" class="md-nav__link">
+    Things that you absolutely need to have before you begin modding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-things-that-are-preferred-to-have" class="md-nav__link">
+    Some things that are preferred to have
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-things-to-note-before-modding" class="md-nav__link">
+    Some things to note before modding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-install-mods" class="md-nav__link">
+    How to install mods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-modding" class="md-nav__link">
+    Simple modding
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple modding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-modding" class="md-nav__link">
+    Texture modding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-modding" class="md-nav__link">
+    Text modding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intermediate-modding" class="md-nav__link">
+    Intermediate modding
+  </a>
+  
+    <nav class="md-nav" aria-label="Intermediate modding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-used-in-this-section" class="md-nav__link">
+    Syntax used in this section
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifiers" class="md-nav__link">
+    &lt;identifiers&gt;:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#card-specific-functions" class="md-nav__link">
+    Card specific functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#card-specific-variables" class="md-nav__link">
+    Card specific variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-specific-functions" class="md-nav__link">
+    Non-specific functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-specific-variables" class="md-nav__link">
+    Non-specific variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifier-variables" class="md-nav__link">
+    &lt;Identifier&gt; variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#card-syntax" class="md-nav__link">
+    Card syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wand-section" class="md-nav__link">
+    Wand section
+  </a>
+  
+    <nav class="md-nav" aria-label="Wand section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites_1" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-game" class="md-nav__link">
+    In game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprites" class="md-nav__link">
+    Sprites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifications" class="md-nav__link">
+    Modifications
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-modding" class="md-nav__link">
+    Advanced Modding
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Modding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modes" class="md-nav__link">
+    Modes:
+  </a>
+  
+    <nav class="md-nav" aria-label="Modes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#important-variables" class="md-nav__link">
+    Important variables:
+  </a>
+  
+    <nav class="md-nav" aria-label="Important variables:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ban-list" class="md-nav__link">
+    Ban list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base" class="md-nav__link">
+    Base
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_draw" class="md-nav__link">
+    _draw
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_flr" class="md-nav__link">
+    _flr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_init" class="md-nav__link">
+    _init
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_load" class="md-nav__link">
+    _load
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_log" class="md-nav__link">
+    _log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_music" class="md-nav__link">
+    _music
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_pal" class="md-nav__link">
+    _pal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_sfx" class="md-nav__link">
+    _sfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_update" class="md-nav__link">
+    _update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abort" class="md-nav__link">
+    abort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abort_brutal" class="md-nav__link">
+    abort_brutal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    abs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ach_event" class="md-nav__link">
+    ach_event
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acos" class="md-nav__link">
+    acos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#act_menu" class="md-nav__link">
+    act_menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate_scepter" class="md-nav__link">
+    activate_scepter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activate_soul" class="md-nav__link">
+    activate_soul
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_card" class="md-nav__link">
+    add_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_child" class="md-nav__link">
+    add_child
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_event" class="md-nav__link">
+    add_event
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_indexes" class="md-nav__link">
+    add_indexes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_scepter" class="md-nav__link">
+    add_scepter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_soul" class="md-nav__link">
+    add_soul
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_soul_slot" class="md-nav__link">
+    add_soul_slot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_spawner" class="md-nav__link">
+    add_spawner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addfont" class="md-nav__link">
+    addfont
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aft" class="md-nav__link">
+    aft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all" class="md-nav__link">
+    all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all_bads" class="md-nav__link">
+    all_bads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apal" class="md-nav__link">
+    apal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply_options" class="md-nav__link">
+    apply_options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arand" class="md-nav__link">
+    arand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asin" class="md-nav__link">
+    asin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ask_card" class="md-nav__link">
+    ask_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ask_disrupt" class="md-nav__link">
+    ask_disrupt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aspr" class="md-nav__link">
+    aspr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert" class="md-nav__link">
+    assert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asspr" class="md-nav__link">
+    asspr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atan2" class="md-nav__link">
+    atan2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#band" class="md-nav__link">
+    band
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bank" class="md-nav__link">
+    bank
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bget" class="md-nav__link">
+    bget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bind" class="md-nav__link">
+    bind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#black_mist_check" class="md-nav__link">
+    black_mist_check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blade_hit" class="md-nav__link">
+    blade_hit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bnksize" class="md-nav__link">
+    bnksize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bnot" class="md-nav__link">
+    bnot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boost" class="md-nav__link">
+    boost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot" class="md-nav__link">
+    boot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bor" class="md-nav__link">
+    bor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boss_turn" class="md-nav__link">
+    boss_turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bprint" class="md-nav__link">
+    bprint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brd" class="md-nav__link">
+    brd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bres" class="md-nav__link">
+    bres
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bres_2" class="md-nav__link">
+    bres_2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bright" class="md-nav__link">
+    bright
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bset" class="md-nav__link">
+    bset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#btn" class="md-nav__link">
+    btn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#btnclr" class="md-nav__link">
+    btnclr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#btnp" class="md-nav__link">
+    btnp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#btnr" class="md-nav__link">
+    btnr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#btnv" class="md-nav__link">
+    btnv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build_stack" class="md-nav__link">
+    build_stack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bxor" class="md-nav__link">
+    bxor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera" class="md-nav__link">
+    camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carry_nearby_pieces" class="md-nav__link">
+    carry_nearby_pieces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cd" class="md-nav__link">
+    cd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ceil" class="md-nav__link">
+    ceil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    changelog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_cards_auto_flip" class="md-nav__link">
+    check_cards_auto_flip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_collections" class="md-nav__link">
+    check_collections
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_condition" class="md-nav__link">
+    check_condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_fatality" class="md-nav__link">
+    check_fatality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_folly_shields" class="md-nav__link">
+    check_folly_shields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chk_achievement" class="md-nav__link">
+    chk_achievement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chkinfo" class="md-nav__link">
+    chkinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chnlfx" class="md-nav__link">
+    chnlfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chnlprog" class="md-nav__link">
+    chnlprog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chr" class="md-nav__link">
+    chr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunk" class="md-nav__link">
+    chunk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circ" class="md-nav__link">
+    circ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circfill" class="md-nav__link">
+    circfill
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean_up" class="md-nav__link">
+    clean_up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clip" class="md-nav__link">
+    clip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clipboard" class="md-nav__link">
+    clipboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone" class="md-nav__link">
+    clone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close_menu" class="md-nav__link">
+    close_menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cls" class="md-nav__link">
+    cls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorize_piece" class="md-nav__link">
+    colorize_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concat" class="md-nav__link">
+    concat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    controls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cos" class="md-nav__link">
+    cos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crop_to" class="md-nav__link">
+    crop_to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctrlr" class="md-nav__link">
+    ctrlr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cub" class="md-nav__link">
+    cub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom_sort" class="md-nav__link">
+    custom_sort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyc" class="md-nav__link">
+    cyc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dark_bishop_up" class="md-nav__link">
+    dark_bishop_up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decay_up" class="md-nav__link">
+    decay_up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defbtn" class="md-nav__link">
+    defbtn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#del" class="md-nav__link">
+    del
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delbnk" class="md-nav__link">
+    delbnk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delchk" class="md-nav__link">
+    delchk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delfnt" class="md-nav__link">
+    delfnt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deli" class="md-nav__link">
+    deli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delmus" class="md-nav__link">
+    delmus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delsfx" class="md-nav__link">
+    delsfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delsrf" class="md-nav__link">
+    delsrf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta" class="md-nav__link">
+    delta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delwin" class="md-nav__link">
+    delwin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desktop_path" class="md-nav__link">
+    desktop_path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dirload" class="md-nav__link">
+    dirload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discord" class="md-nav__link">
+    discord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disrupt" class="md-nav__link">
+    disrupt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dist" class="md-nav__link">
+    dist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_boss" class="md-nav__link">
+    dr_boss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_credits" class="md-nav__link">
+    dr_credits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_crosshair" class="md-nav__link">
+    dr_crosshair
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_dark_bishop" class="md-nav__link">
+    dr_dark_bishop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_flip_card" class="md-nav__link">
+    dr_flip_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dr_piece" class="md-nav__link">
+    dr_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw_arms" class="md-nav__link">
+    draw_arms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw_game" class="md-nav__link">
+    draw_game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#draw_icon" class="md-nav__link">
+    draw_icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dre" class="md-nav__link">
+    dre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsq" class="md-nav__link">
+    dsq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dt" class="md-nav__link">
+    dt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earn_extra_turn" class="md-nav__link">
+    earn_extra_turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_atk" class="md-nav__link">
+    ease_atk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_bounce_out" class="md-nav__link">
+    ease_bounce_out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_flat" class="md-nav__link">
+    ease_flat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_in" class="md-nav__link">
+    ease_in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_in_back" class="md-nav__link">
+    ease_in_back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_in_out" class="md-nav__link">
+    ease_in_out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_out" class="md-nav__link">
+    ease_out
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_out_back" class="md-nav__link">
+    ease_out_back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_out_in" class="md-nav__link">
+    ease_out_in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ease_uturn" class="md-nav__link">
+    ease_uturn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end_game" class="md-nav__link">
+    end_game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end_level" class="md-nav__link">
+    end_level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endgif" class="md-nav__link">
+    endgif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape" class="md-nav__link">
+    escape
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_backup" class="md-nav__link">
+    ev_backup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_promote" class="md-nav__link">
+    ev_promote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_raise_dead" class="md-nav__link">
+    ev_raise_dead
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_rat_atk" class="md-nav__link">
+    ev_rat_atk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_reveal" class="md-nav__link">
+    ev_reveal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_side_spawn" class="md-nav__link">
+    ev_side_spawn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_spawn_item" class="md-nav__link">
+    ev_spawn_item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ev_surrender" class="md-nav__link">
+    ev_surrender
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exe" class="md-nav__link">
+    exe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute" class="md-nav__link">
+    execute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution" class="md-nav__link">
+    execution
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution_boss" class="md-nav__link">
+    execution_boss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution_dark_bishop" class="md-nav__link">
+    execution_dark_bishop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution_lancers" class="md-nav__link">
+    execution_lancers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exhaust_card_with" class="md-nav__link">
+    exhaust_card_with
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expbnk" class="md-nav__link">
+    expbnk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expfnt" class="md-nav__link">
+    expfnt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    export
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export_icon_png" class="md-nav__link">
+    export_icon_png
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expsrf" class="md-nav__link">
+    expsrf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fade_to" class="md-nav__link">
+    fade_to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast_tracker" class="md-nav__link">
+    fast_tracker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fbrd" class="md-nav__link">
+    fbrd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fillp" class="md-nav__link">
+    fillp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find" class="md-nav__link">
+    find
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fire" class="md-nav__link">
+    fire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flip" class="md-nav__link">
+    flip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flip_card" class="md-nav__link">
+    flip_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flr" class="md-nav__link">
+    flr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fntspec" class="md-nav__link">
+    fntspec
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder" class="md-nav__link">
+    folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#font" class="md-nav__link">
+    font
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    foreach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format_gameplay_datas" class="md-nav__link">
+    format_gameplay_datas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fps" class="md-nav__link">
+    fps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpslimit" class="md-nav__link">
+    fpslimit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freeze" class="md-nav__link">
+    freeze
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fwait" class="md-nav__link">
+    fwait
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_ascend" class="md-nav__link">
+    fx_ascend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_cart" class="md-nav__link">
+    fx_cart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_crumb" class="md-nav__link">
+    fx_crumb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_detect" class="md-nav__link">
+    fx_detect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_dust" class="md-nav__link">
+    fx_dust
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_emote" class="md-nav__link">
+    fx_emote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_frame_drop" class="md-nav__link">
+    fx_frame_drop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_screen_flash" class="md-nav__link">
+    fx_screen_flash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_shield" class="md-nav__link">
+    fx_shield
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_spawn" class="md-nav__link">
+    fx_spawn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_trg" class="md-nav__link">
+    fx_trg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_twinkle" class="md-nav__link">
+    fx_twinkle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_unlock" class="md-nav__link">
+    fx_unlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fx_wrong" class="md-nav__link">
+    fx_wrong
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gameover" class="md-nav__link">
+    gameover
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gco" class="md-nav__link">
+    gco
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gen_gfx" class="md-nav__link">
+    gen_gfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_all_cards" class="md-nav__link">
+    get_all_cards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_atk_targets" class="md-nav__link">
+    get_atk_targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_boost" class="md-nav__link">
+    get_boost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_card" class="md-nav__link">
+    get_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_center" class="md-nav__link">
+    get_center
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_delay" class="md-nav__link">
+    get_delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_desc" class="md-nav__link">
+    get_desc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_disp_stats" class="md-nav__link">
+    get_disp_stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_empty_soul_slot" class="md-nav__link">
+    get_empty_soul_slot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_firepower" class="md-nav__link">
+    get_firepower
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_firerange" class="md-nav__link">
+    get_firerange
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_free_card_slot" class="md-nav__link">
+    get_free_card_slot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_global_pos" class="md-nav__link">
+    get_global_pos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_index_table" class="md-nav__link">
+    get_index_table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_inventory" class="md-nav__link">
+    get_inventory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_lang" class="md-nav__link">
+    get_lang
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_menu_desc" class="md-nav__link">
+    get_menu_desc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_mouse_target" class="md-nav__link">
+    get_mouse_target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_move_range" class="md-nav__link">
+    get_move_range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_nearest_piece" class="md-nav__link">
+    get_nearest_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_nei_with" class="md-nav__link">
+    get_nei_with
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_patterns" class="md-nav__link">
+    get_patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_piece_name" class="md-nav__link">
+    get_piece_name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_piece_tempo" class="md-nav__link">
+    get_piece_tempo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_pieces" class="md-nav__link">
+    get_pieces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_plural" class="md-nav__link">
+    get_plural
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_real_bads" class="md-nav__link">
+    get_real_bads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_recoil_square" class="md-nav__link">
+    get_recoil_square
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_slot_card" class="md-nav__link">
+    get_slot_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_slot_card_with" class="md-nav__link">
+    get_slot_card_with
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_slot_cards" class="md-nav__link">
+    get_slot_cards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_soul_range" class="md-nav__link">
+    get_soul_range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_spread" class="md-nav__link">
+    get_spread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_sq_di" class="md-nav__link">
+    get_sq_di
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_square_at" class="md-nav__link">
+    get_square_at
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_square_coef" class="md-nav__link">
+    get_square_coef
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_square_pos" class="md-nav__link">
+    get_square_pos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_time_string" class="md-nav__link">
+    get_time_string
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_zone" class="md-nav__link">
+    get_zone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_zone_targets" class="md-nav__link">
+    get_zone_targets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfenv" class="md-nav__link">
+    getfenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinp" class="md-nav__link">
+    getinp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmetatable" class="md-nav__link">
+    getmetatable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gifframe" class="md-nav__link">
+    gifframe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giflen" class="md-nav__link">
+    giflen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gifstream" class="md-nav__link">
+    gifstream
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#give_ammo" class="md-nav__link">
+    give_ammo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goto_sq" class="md-nav__link">
+    goto_sq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grab_item" class="md-nav__link">
+    grab_item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid_rect" class="md-nav__link">
+    grid_rect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gsq" class="md-nav__link">
+    gsq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gsq_zone" class="md-nav__link">
+    gsq_zone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gtime" class="md-nav__link">
+    gtime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has" class="md-nav__link">
+    has
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has_card" class="md-nav__link">
+    has_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hdclear" class="md-nav__link">
+    hdclear
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help" class="md-nav__link">
+    help
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hex" class="md-nav__link">
+    hex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hide_hint" class="md-nav__link">
+    hide_hint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hit" class="md-nav__link">
+    hit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hmod" class="md-nav__link">
+    hmod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hrnd" class="md-nav__link">
+    hrnd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hsv" class="md-nav__link">
+    hsv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impulse" class="md-nav__link">
+    impulse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inc_ammo" class="md-nav__link">
+    inc_ammo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inc_army" class="md-nav__link">
+    inc_army
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inc_stats" class="md-nav__link">
+    inc_stats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase_card_turns" class="md-nav__link">
+    increase_card_turns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_achievements" class="md-nav__link">
+    init_achievements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_banks" class="md-nav__link">
+    init_banks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_cards_hint" class="md-nav__link">
+    init_cards_hint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_codex" class="md-nav__link">
+    init_codex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_credits" class="md-nav__link">
+    init_credits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_game" class="md-nav__link">
+    init_game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_intro" class="md-nav__link">
+    init_intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_menu" class="md-nav__link">
+    init_menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_new_turn" class="md-nav__link">
+    init_new_turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_safe_mode" class="md-nav__link">
+    init_safe_mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_test" class="md-nav__link">
+    init_test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init_vig" class="md-nav__link">
+    init_vig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inpnum" class="md-nav__link">
+    inpnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inv_kin" class="md-nav__link">
+    inv_kin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipairs" class="md-nav__link">
+    ipairs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irnd" class="md-nav__link">
+    irnd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_card_available" class="md-nav__link">
+    is_card_available
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_free" class="md-nav__link">
+    is_free
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_king" class="md-nav__link">
+    is_king
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_locked" class="md-nav__link">
+    is_locked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_orth_view" class="md-nav__link">
+    is_orth_view
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jesterize" class="md-nav__link">
+    jesterize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#join" class="md-nav__link">
+    join
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kl" class="md-nav__link">
+    kl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leave_sq" class="md-nav__link">
+    leave_sq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lerp" class="md-nav__link">
+    lerp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level_up" class="md-nav__link">
+    level_up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    line
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load" class="md-nav__link">
+    load
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_lang" class="md-nav__link">
+    load_lang
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_mod" class="md-nav__link">
+    load_mod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_params" class="md-nav__link">
+    load_params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockaudio" class="md-nav__link">
+    lockaudio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logdupe" class="md-nav__link">
+    logdupe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lprint" class="md-nav__link">
+    lprint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ls" class="md-nav__link">
+    ls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lshr" class="md-nav__link">
+    lshr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ltime" class="md-nav__link">
+    ltime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#man" class="md-nav__link">
+    man
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mantxt" class="md-nav__link">
+    mantxt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match" class="md-nav__link">
+    match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max" class="md-nav__link">
+    max
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mdr" class="md-nav__link">
+    mdr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memcpy" class="md-nav__link">
+    memcpy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memsbs" class="md-nav__link">
+    memsbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memset" class="md-nav__link">
+    memset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge_funcs" class="md-nav__link">
+    merge_funcs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mid" class="md-nav__link">
+    mid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min" class="md-nav__link">
+    min
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min_digits" class="md-nav__link">
+    min_digits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_bullet" class="md-nav__link">
+    mk_bullet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_but" class="md-nav__link">
+    mk_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_hint_but" class="md-nav__link">
+    mk_hint_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_menu_but" class="md-nav__link">
+    mk_menu_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_part" class="md-nav__link">
+    mk_part
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_sq_but" class="md-nav__link">
+    mk_sq_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_square_but" class="md-nav__link">
+    mk_square_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mk_text_but" class="md-nav__link">
+    mk_text_but
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdir" class="md-nav__link">
+    mkdir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mke" class="md-nav__link">
+    mke
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modchk" class="md-nav__link">
+    modchk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouse" class="md-nav__link">
+    mouse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move_hero" class="md-nav__link">
+    move_hero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mpal" class="md-nav__link">
+    mpal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#msg" class="md-nav__link">
+    msg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    music
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muslen" class="md-nav__link">
+    muslen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#musvol" class="md-nav__link">
+    musvol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mv" class="md-nav__link">
+    mv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mvt" class="md-nav__link">
+    mvt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namefind" class="md-nav__link">
+    namefind
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_card" class="md-nav__link">
+    new_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_level" class="md-nav__link">
+    new_level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_piece" class="md-nav__link">
+    new_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_turn" class="md-nav__link">
+    new_turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newbnk" class="md-nav__link">
+    newbnk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newchk" class="md-nav__link">
+    newchk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newfnt" class="md-nav__link">
+    newfnt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newgif" class="md-nav__link">
+    newgif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newmus" class="md-nav__link">
+    newmus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newsfx" class="md-nav__link">
+    newsfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newsrf" class="md-nav__link">
+    newsrf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newwin" class="md-nav__link">
+    newwin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nxt" class="md-nav__link">
+    nxt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nxtmusic" class="md-nav__link">
+    nxtmusic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on_death" class="md-nav__link">
+    on_death
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open_menu" class="md-nav__link">
+    open_menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opp_atk" class="md-nav__link">
+    opp_atk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opp_move" class="md-nav__link">
+    opp_move
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opp_turn" class="md-nav__link">
+    opp_turn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opt" class="md-nav__link">
+    opt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ord" class="md-nav__link">
+    ord
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orth" class="md-nav__link">
+    orth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ospr" class="md-nav__link">
+    ospr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairs" class="md-nav__link">
+    pairs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pal" class="md-nav__link">
+    pal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pal_inc" class="md-nav__link">
+    pal_inc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pal_piece" class="md-nav__link">
+    pal_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#palette" class="md-nav__link">
+    palette
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#palt" class="md-nav__link">
+    palt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pause_pal" class="md-nav__link">
+    pause_pal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peek" class="md-nav__link">
+    peek
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peek2" class="md-nav__link">
+    peek2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peek4" class="md-nav__link">
+    peek4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pget" class="md-nav__link">
+    pget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pick" class="md-nav__link">
+    pick
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    play
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play_events" class="md-nav__link">
+    play_events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plur" class="md-nav__link">
+    plur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poke" class="md-nav__link">
+    poke
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poke2" class="md-nav__link">
+    poke2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poke4" class="md-nav__link">
+    poke4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop_child" class="md-nav__link">
+    pop_child
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pow" class="md-nav__link">
+    pow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pprint" class="md-nav__link">
+    pprint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print" class="md-nav__link">
+    print
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress" class="md-nav__link">
+    progress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pset" class="md-nav__link">
+    pset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punkcake_intro" class="md-nav__link">
+    punkcake_intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quit" class="md-nav__link">
+    quit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quitting" class="md-nav__link">
+    quitting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rand" class="md-nav__link">
+    rand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rank_select" class="md-nav__link">
+    rank_select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawget" class="md-nav__link">
+    rawget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rawset" class="md-nav__link">
+    rawset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read" class="md-nav__link">
+    read
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read_gameplay_file" class="md-nav__link">
+    read_gameplay_file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recal_scepters" class="md-nav__link">
+    recal_scepters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rect" class="md-nav__link">
+    rect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rect_col" class="md-nav__link">
+    rect_col
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectfill" class="md-nav__link">
+    rectfill
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rectshade" class="md-nav__link">
+    rectshade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refill_ammo" class="md-nav__link">
+    refill_ammo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reg_add" class="md-nav__link">
+    reg_add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reload" class="md-nav__link">
+    reload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove_buts" class="md-nav__link">
+    remove_buts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove_soul_slot" class="md-nav__link">
+    remove_soul_slot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remysys_set_glob" class="md-nav__link">
+    remysys_set_glob
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remysys_timestamp" class="md-nav__link">
+    remysys_timestamp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rep" class="md-nav__link">
+    rep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#require" class="md-nav__link">
+    require
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset" class="md-nav__link">
+    reset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset_save" class="md-nav__link">
+    reset_save
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    resume
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retire" class="md-nav__link">
+    retire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    reverse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rgb" class="md-nav__link">
+    rgb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rlog" class="md-nav__link">
+    rlog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rm" class="md-nav__link">
+    rm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnd" class="md-nav__link">
+    rnd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate" class="md-nav__link">
+    rotate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotl" class="md-nav__link">
+    rotl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotr" class="md-nav__link">
+    rotr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round" class="md-nav__link">
+    round
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+    run
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safe_require" class="md-nav__link">
+    safe_require
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safesize" class="md-nav__link">
+    safesize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safesub" class="md-nav__link">
+    safesub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save" class="md-nav__link">
+    save
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sbs" class="md-nav__link">
+    sbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scan_cancel" class="md-nav__link">
+    scan_cancel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen_shake" class="md-nav__link">
+    screen_shake
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialize" class="md-nav__link">
+    serialize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set_army" class="md-nav__link">
+    set_army
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set_instructions" class="md-nav__link">
+    set_instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set_mode" class="md-nav__link">
+    set_mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfenv" class="md-nav__link">
+    setfenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmetatable" class="md-nav__link">
+    setmetatable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup_piece" class="md-nav__link">
+    setup_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfillp" class="md-nav__link">
+    sfillp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfx" class="md-nav__link">
+    sfx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfxlen" class="md-nav__link">
+    sfxlen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sfxvol" class="md-nav__link">
+    sfxvol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sget" class="md-nav__link">
+    sget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sgn" class="md-nav__link">
+    sgn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shader" class="md-nav__link">
+    shader
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdrf" class="md-nav__link">
+    shdrf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdrf2" class="md-nav__link">
+    shdrf2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdrf3" class="md-nav__link">
+    shdrf3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdrf4" class="md-nav__link">
+    shdrf4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdri" class="md-nav__link">
+    shdri
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdri2" class="md-nav__link">
+    shdri2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdri3" class="md-nav__link">
+    shdri3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdri4" class="md-nav__link">
+    shdri4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shdrsrf" class="md-nav__link">
+    shdrsrf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shl" class="md-nav__link">
+    shl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show_danger" class="md-nav__link">
+    show_danger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show_hint" class="md-nav__link">
+    show_hint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shpr" class="md-nav__link">
+    shpr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shr" class="md-nav__link">
+    shr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffle" class="md-nav__link">
+    shuffle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffle_copy" class="md-nav__link">
+    shuffle_copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sig" class="md-nav__link">
+    sig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sin" class="md-nav__link">
+    sin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sleep" class="md-nav__link">
+    sleep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slicer" class="md-nav__link">
+    slicer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn_dark_bishop" class="md-nav__link">
+    spawn_dark_bishop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn_hero" class="md-nav__link">
+    spawn_hero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn_pieces" class="md-nav__link">
+    spawn_pieces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split" class="md-nav__link">
+    split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spr" class="md-nav__link">
+    spr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprgrid" class="md-nav__link">
+    sprgrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spritesheet" class="md-nav__link">
+    spritesheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqp" class="md-nav__link">
+    sqp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqr" class="md-nav__link">
+    sqr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqrdist" class="md-nav__link">
+    sqrdist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqrt" class="md-nav__link">
+    sqrt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srand" class="md-nav__link">
+    srand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srfmem" class="md-nav__link">
+    srfmem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srfname" class="md-nav__link">
+    srfname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srfshot" class="md-nav__link">
+    srfshot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srfsize" class="md-nav__link">
+    srfsize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sset" class="md-nav__link">
+    sset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sspr" class="md-nav__link">
+    sspr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start_lvl_music" class="md-nav__link">
+    start_lvl_music
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steal" class="md-nav__link">
+    steal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steam" class="md-nav__link">
+    steam
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    stop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storm" class="md-nav__link">
+    storm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringify_table" class="md-nav__link">
+    stringify_table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strwidth" class="md-nav__link">
+    strwidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub" class="md-nav__link">
+    sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sugar_step" class="md-nav__link">
+    sugar_step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum_el" class="md-nav__link">
+    sum_el
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sysbat" class="md-nav__link">
+    sysbat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syslang" class="md-nav__link">
+    syslang
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table_from_file" class="md-nav__link">
+    table_from_file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table_from_file_old" class="md-nav__link">
+    table_from_file_old
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table_from_string" class="md-nav__link">
+    table_from_string
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbl_import" class="md-nav__link">
+    tbl_import
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbl_index" class="md-nav__link">
+    tbl_index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbz" class="md-nav__link">
+    tbz
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcamera" class="md-nav__link">
+    tcamera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tear_apart" class="md-nav__link">
+    tear_apart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#throw_grenade" class="md-nav__link">
+    throw_grenade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#throw_piece" class="md-nav__link">
+    throw_piece
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle_target" class="md-nav__link">
+    toggle_target
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tonum" class="md-nav__link">
+    tonum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostr" class="md-nav__link">
+    tostr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace_cover" class="md-nav__link">
+    trace_cover
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace_hdist" class="md-nav__link">
+    trace_hdist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trace_heros_dists" class="md-nav__link">
+    trace_heros_dists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traceback" class="md-nav__link">
+    traceback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track_mouse" class="md-nav__link">
+    track_mouse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer" class="md-nav__link">
+    transfer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transp" class="md-nav__link">
+    transp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri" class="md-nav__link">
+    tri
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri_angle" class="md-nav__link">
+    tri_angle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trifill" class="md-nav__link">
+    trifill
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trig_achievement" class="md-nav__link">
+    trig_achievement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twv" class="md-nav__link">
+    twv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#txtinp" class="md-nav__link">
+    txtinp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#txtwidth" class="md-nav__link">
+    txtwidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uadd" class="md-nav__link">
+    uadd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unflip_card" class="md-nav__link">
+    unflip_card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlockaudio" class="md-nav__link">
+    unlockaudio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unpack" class="md-nav__link">
+    unpack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unpause" class="md-nav__link">
+    unpause
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upe" class="md-nav__link">
+    upe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uplift" class="md-nav__link">
+    uplift
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uppercase" class="md-nav__link">
+    uppercase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wait" class="md-nav__link">
+    wait
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warp" class="md-nav__link">
+    warp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#white_king_up" class="md-nav__link">
+    white_king_up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window" class="md-nav__link">
+    window
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#winspec" class="md-nav__link">
+    winspec
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wipe" class="md-nav__link">
+    wipe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wlog" class="md-nav__link">
+    wlog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write" class="md-nav__link">
+    write
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write_big_at" class="md-nav__link">
+    write_big_at
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xpl" class="md-nav__link">
+    xpl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xpl_boss" class="md-nav__link">
+    xpl_boss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xpl_king" class="md-nav__link">
+    xpl_king
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ysort" class="md-nav__link">
+    ysort
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-crash-reasons" class="md-nav__link">
+    Common crash reasons
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="modding">Modding</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="things-that-you-absolutely-need-to-have-before-you-begin-modding">Things that you absolutely need to have before you begin modding</h3>
+<ul>
+<li>Basic knowledge file structures and how to navigate through menus </li>
+<li>A text editor of some kind </li>
+<li>An image editor (Windows should come pre-packaged with an image editor)</li>
+<li>Shotgun King version 1.3 or above </li>
+<li>The directory in which your [Shotgun king] exe is stored </li>
+</ul>
+<h3 id="some-things-that-are-preferred-to-have">Some things that are preferred to have</h3>
+<ul>
+<li>Visual studio code </li>
+<li>Access to version 1.3 (currently only available on itch)</li>
+<li>Intermediate coding knowledge, specifically lua</li>
+</ul>
+<h3 id="some-things-to-note-before-modding">Some things to note before modding</h3>
+<ul>
+<li>The game is very easy to break and is prone to crashing</li>
+<li>Never change the names of any of the files in the mod folder <em>(pending on the new update)</em> </li>
+<li>Crash logs rarely provide you with help you can understand. if you encounter any problems that aren't explained in the documentation ask the PUNCAKE discord for help and most people will help, if you can’t find a reliable answer then contact me on discord at “Spooky#9159” </li>
+</ul>
+<h3 id="how-to-install-mods">How to install mods</h3>
+<ul>
+<li>Go into your SK directory and create a folder called mods  </li>
+<li>Get the <a href="https://github.com/microbullet/microbullet.github.io/files/9674152/Mod.Base.zip">Base Mod.zip</a> file.</li>
+<li>Unzip the file</li>
+<li>Put the Base mod folder into the mods folder  </li>
+<li>If your file structure looks like “mods &gt; base mod &gt; files” then you are good to go </li>
+</ul>
+<h2 id="simple-modding">Simple modding</h2>
+<h3 id="texture-modding">Texture modding</h3>
+<p>Texture modding is the simplest type of modding as it requires no coding experience and works almost every time (golden gun incident). Texture modding just requires that you edit the image with the texture you are looking for </p>
+<p>In the sample mod folder, there are 4 images that can be edited, they are 
+- The intro where the king is holding his shotgun 
+- The sprite sheet for all the in-game unit sprites 
+- The card sprite sheet that contains all the cards and some spares 
+- The Image with all the cutscenes on it </p>
+<p>When texture modding here’s what to watch out for 
+- You cannot extend the images, or it breaks the textures (for now (we hope)) 
+- The game is limited to 5 colors and any other color will appear transparent, the 5 colors are:</p>
+<p><img alt="colors" src="https://user-images.githubusercontent.com/73013941/168457764-4457721d-0dd4-4752-b0ea-7b7b53eed9f6.png" /></p>
+<p><em>(Image credit: Tye#3868)</em></p>
+<h3 id="text-modding">Text modding</h3>
+<p>Text modding is changing what the text boxes say in the menus and in game, text modding can be used for either changing certain names of things in game or even adding in new languages to the game, it’s as simple as changing one of the id’s  </p>
+<p>Format:  </p>
+<p>Id of item::what is displayed 
+E.g. 
+play::begin  </p>
+<p>Text modding can be done with a “<language here>.txt” file and including it in either the mod folder or in the dedicated “lang” folder  </p>
+<h2 id="intermediate-modding">Intermediate modding</h2>
+<p>This section will (try) to FULLY cover the script.lua file and stuff you can do with it</p>
+<h3 id="syntax-used-in-this-section">Syntax used in this section</h3>
+<pre><code>&lt;int&gt;                               = a float 
+
+&lt;bool&gt;                              = either 1 or 0 meaning true or false 
+
+&lt;identifiers&gt;                       = interchangeable for any of the identifiers 
+
+&lt;variable&gt;                          = one of the changeable values of the king such as firing arc 
+
+&lt;function&gt;                          = &lt;identifier&gt;_&lt;variable&gt;=&lt;int&gt;, or does an action with a given input 
+</code></pre>
+<h3 id="identifiers"><code>&lt;identifiers&gt;</code>:</h3>
+<pre><code>pawn_    or 0                       = Used to identify the pawn in the script 
+
+knight_  or 1                       = Used to identify the knight in the script 
+
+bishop_  or 2                       = Used to identify the bishop in the script 
+
+rook_    or 3                       = Used to identify the castle in the script 
+
+queen_   or 4                       = Used to identify the queen in the script 
+
+king_    or 5                       = Used to identify the king in the script 
+
+boss_    or 6                       = Used to identify the king boss in the script 
+
+all_     or 7                       = Used to identify all pieces in the script 
+
+leader_  or 8                       = Used to identify king or bishop in the script depending on theocracy  
+</code></pre>
+<h3 id="card-specific-functions">Card specific functions</h3>
+<pre><code>need=&lt;int&gt; or need={&lt;int&gt;,&lt;int&gt;}    = card requires specific pieces to appear 
+
+need_&lt;special&gt;                      = card requires a specfic special to appear 
+
+need_&lt;variable&gt;=&lt;int&gt;               = requires &lt;variable&gt; to equal &lt;int&gt; to appear 
+
+need_&lt;identifier&gt;_&lt;variable&gt;=&lt;int&gt;  = requires the &lt;identifier&gt;’s &lt;variable&gt; to equal &lt;int&gt; to appear 
+</code></pre>
+<h3 id="card-specific-variables">Card specific variables</h3>
+<pre><code>pwe=&lt;int&gt;                           = determines how rare the card is, set to 0 and it won't appear 
+
+gid=&lt;int&gt;                           = determines what number card image it is on the card sheet 
+
+n=&lt;int&gt;                             = determines the max of this card you can have 
+
+delay=&lt;int&gt;                         = waits for &lt;int&gt; turns to enable things before it 
+
+period=&lt;int&gt;                        = do the [effects] every &lt;int&gt; turns (only works with gain)
+</code></pre>
+<h3 id="non-specific-functions">Non-specific functions</h3>
+<pre><code>gain=&lt;int&gt; or gain={&lt;int&gt;, &lt;int&gt;}   = adds specific units to the white army
+
+sac=&lt;int&gt; or sac={&lt;int&gt;,&lt;int&gt;}      = removes specific units 
+</code></pre>
+<h3 id="non-specific-variables">Non-specific variables</h3>
+<p>Booleans: </p>
+<pre><code>grab=&lt;bool&gt;                         = decides whether you can pick up a unit and throw it 
+
+crown=&lt;bool&gt;                        = decides whether you have the effect of sacred crown or not 
+
+presence=&lt;bool&gt;                     = determines whether you have august Presence enabled 
+
+hop=&lt;int&gt;                           = if &lt;int&gt; &gt; 0 then determines the damage of taunting hop  
+
+heir=&lt;bool&gt;                         = determines whether a secret heir is picked every round 
+
+pikemen=&lt;bool&gt;                      = determines whether you have pikemen enabled 
+
+Assault=&lt;bool&gt;                      = determines whether assault is active or not 
+
+theocracy=&lt;bool&gt;                    = determines whether theocracy is enabled 
+
+militia=&lt;bool&gt;                      = determines whether militia is active.
+
+mist=&lt;bool&gt;                         = determines whether this card saves you from death or not 
+
+steed=&lt;bool&gt;                        = determines how many extra spaces you can move per knight soul
+</code></pre>
+<h3 id="variables">Variables:</h3>
+<pre><code>ammo_max=&lt;int&gt;                      = adds an &lt;int&gt; of ammos to the ammo reserves 
+
+chamber_max=&lt;int&gt;                   = adds &lt;int&gt; to the number of shots you can fire before reloading 
+
+alarm=&lt;int&gt;                         = reduces the time it takes for backs to arrive by &lt;int&gt; turns
+
+knockback=&lt;int&gt;                     = you have an &lt;int&gt;% chance to knock a piece back 
+
+firerange=&lt;int&gt;                     = increases fire range by &lt;int&gt; 
+
+ammo_regen=&lt;int&gt;                    = increases the ammo you get from moving by &lt;int&gt; 
+
+spread=&lt;int&gt;                        = increases the firing arc by &lt;int&gt; 
+
+special=” &lt;special&gt;”                = gives the player the right click ability &lt;special&gt; 
+
+soul_slot=&lt;+int&gt;                    = increases the king’s soul slots by &lt;+int&gt; 
+
+soul_sink=&lt;-Int&gt;                    = decreases the king’s soul slots by &lt;-int&gt; 
+
+firepower=&lt;int&gt;                     = gain &lt;int&gt; firepower  
+
+pierce=&lt;int&gt;                        = gain &lt;int&gt; pierce
+
+hop=&lt;int&gt;                           = gain &lt;int&gt; taunting hop damage 
+
+xmax=&lt;int&gt;                          = determines the length of the board
+
+ymax=&lt;int&gt;                          = determines the height of the board
+
+wand={&lt;int&gt;}                        = gain &lt;int&gt; wand, explained further 
+
+bad_shells=&lt;int&gt;                    = &lt;int&gt; of your shots will have double the potential spread 
+
+moat=&lt;int&gt;                          = if &lt;int&gt; &gt; 0 then determines what row the moat is on 
+
+absolution=&lt;int&gt;                    = gain &lt;int&gt; firepower for every empty soul slot  
+
+flip_on=”contact” o r”inner”        = determines whether the card flips for specific conditions 
+</code></pre>
+<h3 id="identifier-variables"><code>&lt;Identifier&gt;</code> variables</h3>
+<pre><code>&lt;identifier&gt;_castle=&lt;bool&gt;          = determines whether castling is enabled for &lt;identifier&gt; 
+
+&lt;identifier&gt;_cage=&lt;int&gt;             = limits the &lt;identifier&gt; to &lt;int&gt; spaces of movement 
+
+&lt;identifier&gt;_tempo=&lt;int&gt;            = increases the time between all &lt;identifier&gt;s moves 
+
+&lt;identifier&gt;_flying=&lt;bool&gt;          = determines whether &lt;identifier&gt; can ignore obstacles 
+
+&lt;identifier&gt;_orth=&lt;bool&gt;            = determines whether &lt;identifier&gt;s can move like queens 
+
+&lt;identifier&gt;_joust=&lt;bool&gt;           = determines whether you get an extra turn for killing an &lt;identifier&gt;
+
+&lt;identifier&gt;_poison=&lt;int&gt;           = applies poison to all &lt;identifier&gt;’s for &lt;int&gt; turns 
+
+&lt;identifier&gt;_shell=&lt;int&gt;            = gain &lt;int&gt; ammo when you kill a &lt;identifier&gt;   
+
+&lt;identifier&gt;_hp=&lt;int&gt;               = changes the hp of every &lt;identifier&gt; by &lt;int&gt; 
+
+&lt;identifier&gt;_iron=&lt;bool&gt;            = decides whether or not the &lt;identifier&gt; is invincible.
+
+&lt;identifier&gt;_bodyguard=&lt;bool&gt;       = decides whether &lt;identifier&gt; needs to be killed before the king can die
+
+&lt;identifier&gt;_shield=&lt;bool&gt;          = determines whether &lt;identifier&gt;s shield is active or not 
+</code></pre>
+<h3 id="card-syntax">Card syntax</h3>
+<p><code>{[gid], [id], [n], [pwe], [effects]},</code> </p>
+<h2 id="wand-section">Wand section</h2>
+<h3 id="prerequisites_1">Prerequisites</h3>
+<p>Most of the wands are hardcoded in their function and currently there is no way to modify what the want will do, however some of the wands have a variable that can be changed in order to alter its function slightly, an example of this is the wand of wrath which does a default of 8 damage to random enemies, the 8 in this example can be changed to whatever suits the mod.</p>
+<h3 id="syntax">Syntax</h3>
+<p>In the sript.lua the syntax for denoting a wand is</p>
+<p><code>wand={&lt;int&gt;, &lt;int/variable&gt;},</code></p>
+<p>An <code>&lt;int/variable&gt;</code> isn't used for 2 wands (those being gust and frenzy), however the {} is still required.</p>
+<h3 id="in-game">In game</h3>
+<p>In shotgun king there are 5 wands, these wands are unfortunately hardcoded to what the numbers inputted to them will alter however the numbers on 3 of the wands can be altered, these wands nad what the following input changes are:
+ - Wrath, following <code>&lt;input&gt;</code> provides it's source of damage number, can be any defined variable above 1.
+ - Downpour, the <code>&lt;int&gt;</code> determines the total damage it deals
+ - Wings, the <code>&lt;input&gt;</code> determines how manys spaces you can move using the wand</p>
+<h3 id="sprites">Sprites</h3>
+<p>The sprites that the wands take in the top right are determined by their number (0 being the first and 4 being the last), the sprites can be found on the gfx.png sheet. </p>
+<h3 id="modifications">Modifications</h3>
+<p>Trying to modify the wand number to outside the range of 0-4 the the sprite will show up but it will softlock the game. (citation needed)</p>
+<h2 id="advanced-modding">Advanced Modding</h2>
+<p>If, at this point something you want to do still isn't possible than the further stuff should answer your questions, be warned though, it is much more difficult than the previous sections</p>
+<h3 id="modes">Modes:</h3>
+<h4 id="important-variables">Important variables:</h4>
+<h5 id="ban-list">Ban list</h5>
+<p>The <code>ban={"card names"}</code> is a very useful feature for mods as it cuts down on the bloat of massive exclusion lists in the script.lua function</p>
+<p>Syntax:</p>
+<pre><code>ban={
+ &quot;card_name_1&quot;,
+ &quot;card_name_2&quot;,
+ &quot;card_name_3&quot;
+}
+</code></pre>
+<h4 id="setup">Setup</h4>
+<p>The <code>setup={"&lt;var&gt;"}</code> variable is currently only used to change the max number of cards of each type you can hold</p>
+<p>Syntax:</p>
+<pre><code>setup={
+    slots_max={10,10},
+}
+</code></pre>
+<h4 id="base">Base</h4>
+<p>The base variable functions roughly the same as the old HERO_INIT variable in the script.lua file, except it applies to a mode</p>
+<p>Syntax:</p>
+<pre><code>base={
+    condition_1=0, condition_2=1,
+    variable_1=&quot;x&quot;, variable_2=&quot;y&quot;
+}
+</code></pre>
+<h3 id="functions">Functions</h3>
+<h4 id="_draw">_draw</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_flr">_flr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_init">_init</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_load">_load</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_log">_log</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_music">_music</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_pal">_pal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_sfx">_sfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="_update">_update</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="abort">abort</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="abort_brutal">abort_brutal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="abs">abs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ach_event">ach_event</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="acos">acos</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="act_menu">act_menu</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="activate_scepter">activate_scepter</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="activate_soul">activate_soul</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add">add</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_card">add_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_child">add_child</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_event">add_event</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_indexes">add_indexes</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_scepter">add_scepter</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_soul">add_soul</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_soul_slot">add_soul_slot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="add_spawner">add_spawner</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="addfont">addfont</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="aft">aft</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="all">all</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="all_bads">all_bads</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="apal">apal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="apply_options">apply_options</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="arand">arand</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="asin">asin</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ask_card">ask_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ask_disrupt">ask_disrupt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="aspr">aspr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="assert">assert</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="asspr">asspr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="atan2">atan2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="band">band</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bank">bank</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bget">bget</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bind">bind</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="black_mist_check">black_mist_check</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="blade_hit">blade_hit</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bnksize">bnksize</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bnot">bnot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="boost">boost</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="boot">boot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bor">bor</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="boss_turn">boss_turn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bprint">bprint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="brd">brd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bres">bres</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bres_2">bres_2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bright">bright</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bset">bset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="btn">btn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="btnclr">btnclr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="btnp">btnp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="btnr">btnr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="btnv">btnv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="build_stack">build_stack</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="bxor">bxor</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="camera">camera</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="carry_nearby_pieces">carry_nearby_pieces</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="cd">cd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ceil">ceil</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="changelog">changelog</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="check_cards_auto_flip">check_cards_auto_flip</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="check_collections">check_collections</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="check_condition">check_condition</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="check_fatality">check_fatality</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="check_folly_shields">check_folly_shields</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chk_achievement">chk_achievement</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chkinfo">chkinfo</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chnlfx">chnlfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chnlprog">chnlprog</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chr">chr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="chunk">chunk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="circ">circ</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="circfill">circfill</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="clean_up">clean_up</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="clip">clip</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="clipboard">clipboard</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="clone">clone</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="close_menu">close_menu</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="cls">cls</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="color">color</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="colorize_piece">colorize_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="concat">concat</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="controls">controls</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="cos">cos</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="crop_to">crop_to</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ctrlr">ctrlr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="cub">cub</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="custom_sort">custom_sort</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="cyc">cyc</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dark_bishop_up">dark_bishop_up</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="decay_up">decay_up</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="defbtn">defbtn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="del">del</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delbnk">delbnk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delchk">delchk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delfnt">delfnt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="deli">deli</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delmus">delmus</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delsfx">delsfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delsrf">delsrf</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delta">delta</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="delwin">delwin</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="desktop_path">desktop_path</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dirload">dirload</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="discord">discord</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="disrupt">disrupt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dist">dist</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_boss">dr_boss</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_credits">dr_credits</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_crosshair">dr_crosshair</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_dark_bishop">dr_dark_bishop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_flip_card">dr_flip_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dr_piece">dr_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="draw_arms">draw_arms</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="draw_game">draw_game</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="draw_icon">draw_icon</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dre">dre</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dsq">dsq</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="dt">dt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="earn_extra_turn">earn_extra_turn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_atk">ease_atk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_bounce_out">ease_bounce_out</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_flat">ease_flat</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_in">ease_in</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_in_back">ease_in_back</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_in_out">ease_in_out</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_out">ease_out</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_out_back">ease_out_back</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_out_in">ease_out_in</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ease_uturn">ease_uturn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="end_game">end_game</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="end_level">end_level</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="endgif">endgif</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="error">error</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="escape">escape</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_backup">ev_backup</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_promote">ev_promote</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_raise_dead">ev_raise_dead</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_rat_atk">ev_rat_atk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_reveal">ev_reveal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_side_spawn">ev_side_spawn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_spawn_item">ev_spawn_item</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ev_surrender">ev_surrender</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="exe">exe</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="execute">execute</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="execution">execution</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="execution_boss">execution_boss</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="execution_dark_bishop">execution_dark_bishop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="execution_lancers">execution_lancers</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="exhaust_card_with">exhaust_card_with</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="expbnk">expbnk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="expfnt">expfnt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="export">export</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="export_icon_png">export_icon_png</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="expsrf">expsrf</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fade_to">fade_to</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fast_tracker">fast_tracker</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fbrd">fbrd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="file">file</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fillp">fillp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="find">find</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fire">fire</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="flip">flip</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="flip_card">flip_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="flr">flr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fntspec">fntspec</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="folder">folder</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="font">font</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="foreach">foreach</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="format">format</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="format_gameplay_datas">format_gameplay_datas</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fps">fps</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fpslimit">fpslimit</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="freeze">freeze</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fwait">fwait</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_ascend">fx_ascend</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_cart">fx_cart</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_crumb">fx_crumb</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_detect">fx_detect</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_dust">fx_dust</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_emote">fx_emote</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_frame_drop">fx_frame_drop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_screen_flash">fx_screen_flash</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_shield">fx_shield</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_spawn">fx_spawn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_trg">fx_trg</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_twinkle">fx_twinkle</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_unlock">fx_unlock</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="fx_wrong">fx_wrong</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gameover">gameover</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gco">gco</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gen_gfx">gen_gfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_all_cards">get_all_cards</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_atk_targets">get_atk_targets</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_boost">get_boost</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_card">get_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_center">get_center</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_delay">get_delay</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_desc">get_desc</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_disp_stats">get_disp_stats</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_empty_soul_slot">get_empty_soul_slot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_firepower">get_firepower</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_firerange">get_firerange</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_free_card_slot">get_free_card_slot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_global_pos">get_global_pos</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_index_table">get_index_table</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_inventory">get_inventory</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_lang">get_lang</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_menu_desc">get_menu_desc</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_mouse_target">get_mouse_target</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_move_range">get_move_range</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_nearest_piece">get_nearest_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_nei_with">get_nei_with</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_patterns">get_patterns</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_piece_name">get_piece_name</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_piece_tempo">get_piece_tempo</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_pieces">get_pieces</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_plural">get_plural</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_real_bads">get_real_bads</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_recoil_square">get_recoil_square</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_slot_card">get_slot_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_slot_card_with">get_slot_card_with</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_slot_cards">get_slot_cards</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_soul_range">get_soul_range</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_spread">get_spread</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_sq_di">get_sq_di</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_square_at">get_square_at</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_square_coef">get_square_coef</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_square_pos">get_square_pos</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_time_string">get_time_string</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_zone">get_zone</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="get_zone_targets">get_zone_targets</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="getfenv">getfenv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="getinp">getinp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="getmetatable">getmetatable</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gifframe">gifframe</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="giflen">giflen</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gifstream">gifstream</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="give_ammo">give_ammo</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="goto_sq">goto_sq</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="grab_item">grab_item</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="grid_rect">grid_rect</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gsq">gsq</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gsq_zone">gsq_zone</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="gtime">gtime</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="has">has</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="has_card">has_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hdclear">hdclear</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="help">help</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hex">hex</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hide_hint">hide_hint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hit">hit</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hmod">hmod</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hrnd">hrnd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="hsv">hsv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="impulse">impulse</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="inc_ammo">inc_ammo</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="inc_army">inc_army</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="inc_stats">inc_stats</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="increase_card_turns">increase_card_turns</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_achievements">init_achievements</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_banks">init_banks</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_cards_hint">init_cards_hint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_codex">init_codex</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_credits">init_credits</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_game">init_game</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_intro">init_intro</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_menu">init_menu</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_new_turn">init_new_turn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_safe_mode">init_safe_mode</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_test">init_test</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="init_vig">init_vig</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="inpnum">inpnum</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="inv_kin">inv_kin</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ipairs">ipairs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="irnd">irnd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="is_card_available">is_card_available</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="is_free">is_free</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="is_king">is_king</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="is_locked">is_locked</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="is_orth_view">is_orth_view</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="jesterize">jesterize</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="join">join</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="kl">kl</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="leave_sq">leave_sq</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="lerp">lerp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="level_up">level_up</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="line">line</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="load">load</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="load_lang">load_lang</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="load_mod">load_mod</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="load_params">load_params</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="lockaudio">lockaudio</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="log">log</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="logdupe">logdupe</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="loop">loop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="lprint">lprint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ls">ls</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="lshr">lshr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ltime">ltime</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="man">man</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mantxt">mantxt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="match">match</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="max">max</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mdr">mdr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="memcpy">memcpy</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="memsbs">memsbs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="memset">memset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="merge_funcs">merge_funcs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mid">mid</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="min">min</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="min_digits">min_digits</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_bullet">mk_bullet</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_but">mk_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_hint_but">mk_hint_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_menu_but">mk_menu_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_part">mk_part</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_sq_but">mk_sq_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_square_but">mk_square_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mk_text_but">mk_text_but</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mkdir">mkdir</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mke">mke</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="modchk">modchk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mouse">mouse</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="move_hero">move_hero</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mpal">mpal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="msg">msg</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="music">music</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="muslen">muslen</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="musvol">musvol</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mv">mv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="mvt">mvt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="namefind">namefind</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="new_card">new_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="new_level">new_level</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="new_piece">new_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="new_turn">new_turn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newbnk">newbnk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newchk">newchk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newfnt">newfnt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newgif">newgif</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newmus">newmus</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newsfx">newsfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newsrf">newsrf</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="newwin">newwin</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="nxt">nxt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="nxtmusic">nxtmusic</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="on_death">on_death</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="open_menu">open_menu</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="opp_atk">opp_atk</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="opp_move">opp_move</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="opp_turn">opp_turn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="opt">opt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ord">ord</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="orth">orth</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ospr">ospr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pairs">pairs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pal">pal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pal_inc">pal_inc</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pal_piece">pal_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="palette">palette</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="palt">palt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pause_pal">pause_pal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="peek">peek</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="peek2">peek2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="peek4">peek4</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pget">pget</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pick">pick</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="play">play</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="play_events">play_events</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="plur">plur</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="poke">poke</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="poke2">poke2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="poke4">poke4</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pop_child">pop_child</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pow">pow</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pprint">pprint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="print">print</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="progress">progress</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="pset">pset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="punkcake_intro">punkcake_intro</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="quit">quit</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="quitting">quitting</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rand">rand</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rank_select">rank_select</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rawget">rawget</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rawset">rawset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="read">read</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="read_gameplay_file">read_gameplay_file</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="recal_scepters">recal_scepters</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rect">rect</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rect_col">rect_col</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rectfill">rectfill</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rectshade">rectshade</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="refill_ammo">refill_ammo</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="reg_add">reg_add</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="reload">reload</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="remove_buts">remove_buts</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="remove_soul_slot">remove_soul_slot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="remysys_set_glob">remysys_set_glob</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="remysys_timestamp">remysys_timestamp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rep">rep</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="require">require</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="reset">reset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="reset_save">reset_save</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="resume">resume</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="retire">retire</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="reverse">reverse</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rgb">rgb</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rlog">rlog</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rm">rm</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rnd">rnd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rotate">rotate</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rotl">rotl</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="rotr">rotr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="round">round</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="run">run</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="safe_require">safe_require</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="safesize">safesize</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="safesub">safesub</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="save">save</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sbs">sbs</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="scan_cancel">scan_cancel</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="screen_shake">screen_shake</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="serialize">serialize</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="set_army">set_army</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="set_instructions">set_instructions</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="set_mode">set_mode</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="setfenv">setfenv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="setmetatable">setmetatable</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="setup_piece">setup_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sfillp">sfillp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sfx">sfx</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sfxlen">sfxlen</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sfxvol">sfxvol</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sget">sget</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sgn">sgn</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shader">shader</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdrf">shdrf</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdrf2">shdrf2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdrf3">shdrf3</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdrf4">shdrf4</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdri">shdri</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdri2">shdri2</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdri3">shdri3</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdri4">shdri4</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shdrsrf">shdrsrf</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shl">shl</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="show_danger">show_danger</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="show_hint">show_hint</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shpr">shpr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shr">shr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shuffle">shuffle</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="shuffle_copy">shuffle_copy</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sig">sig</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sin">sin</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sleep">sleep</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="slicer">slicer</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="spawn_dark_bishop">spawn_dark_bishop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="spawn_hero">spawn_hero</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="spawn_pieces">spawn_pieces</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="split">split</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="spr">spr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sprgrid">sprgrid</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="spritesheet">spritesheet</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sqp">sqp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sqr">sqr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sqrdist">sqrdist</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sqrt">sqrt</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="srand">srand</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="srfmem">srfmem</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="srfname">srfname</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="srfshot">srfshot</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="srfsize">srfsize</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sset">sset</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sspr">sspr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="start_lvl_music">start_lvl_music</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="steal">steal</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="steam">steam</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="step">step</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="stop">stop</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="storm">storm</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="stringify_table">stringify_table</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="strwidth">strwidth</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sub">sub</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sugar_step">sugar_step</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sum_el">sum_el</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="sysbat">sysbat</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="syslang">syslang</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="table_from_file">table_from_file</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="table_from_file_old">table_from_file_old</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="table_from_string">table_from_string</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="target">target</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tbl_import">tbl_import</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tbl_index">tbl_index</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tbz">tbz</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tcamera">tcamera</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tear_apart">tear_apart</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="throw_grenade">throw_grenade</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="throw_piece">throw_piece</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="time">time</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="toggle_target">toggle_target</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tonum">tonum</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tostr">tostr</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="trace_cover">trace_cover</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="trace_hdist">trace_hdist</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="trace_heros_dists">trace_heros_dists</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="traceback">traceback</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="track_mouse">track_mouse</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="transfer">transfer</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="transp">transp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tri">tri</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="tri_angle">tri_angle</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="trifill">trifill</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="trig_achievement">trig_achievement</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="twv">twv</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="txtinp">txtinp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="txtwidth">txtwidth</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="type">type</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="uadd">uadd</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="unflip_card">unflip_card</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="unlockaudio">unlockaudio</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="unpack">unpack</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="unpause">unpause</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="upe">upe</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="uplift">uplift</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="uppercase">uppercase</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="url">url</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="wait">wait</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="warp">warp</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="white_king_up">white_king_up</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="window">window</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="winspec">winspec</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="wipe">wipe</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="wlog">wlog</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="write">write</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="write_big_at">write_big_at</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="xpl">xpl</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="xpl_boss">xpl_boss</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="xpl_king">xpl_king</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h4 id="ysort">ysort</h4>
+<p>Parameters:</p>
+<p>Usage:</p>
+<h2 id="common-crash-reasons">Common crash reasons</h2>
+<ul>
+<li>Not having correct syntax, this includes things like commas or equal signs. </li>
+<li>Having a card mentioned in the exclusion area that doesn’t exist </li>
+<li>Having the pwe value too high (like a billion high) </li>
+<li>Not having a mode or card mentioned in the english.txt file</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "toc.integrate", "navigation.top"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.94c44541.min.js"></script>
+      
+    
+  </body>
+</html>

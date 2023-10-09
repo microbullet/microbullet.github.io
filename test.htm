@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="badge_generator.css">
+        <script type="text/javascript" src="badge_generator.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="dom-to-image.js"></script>
+    </head>
+<div id="container" height="300px">
+    <p>Some HTML content or images.</p>
+    <p>Some HTML content or images.</p>
+    <form>
+        <input>
+    </form>
+</div>
+
+<button onclick="capture()">capture</button>
+
+<script>
+    var node = document.getElementById('container');
+
+    function capture(){
+        domtoimage.toPng(node).then(function (dataUrl) {
+            var img = new Image();
+            img.src = dataUrl;
+            document.body.appendChild(img);
+        }).catch(function (error) {
+            console.error('oops, something went wrong!', error);
+        });
+    }
+</script>
+</html>

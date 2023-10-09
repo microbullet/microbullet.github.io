@@ -1,0 +1,1380 @@
+{
+	"cards": {
+		"Ermine Belt":
+		{
+			"text": "+3 ammo max",
+			"n": 3,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 0
+		},
+
+		"Rightful Curtsy":
+		{
+			"text": "+1 ammo max\n+50% chance to knockback enemy",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 1
+		},
+
+		"Elite Gem":
+		{
+			"text": "+1 ammo regeneration\n+1 fire range",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 2
+		},
+
+		"Extra Barrel":
+		{
+			"text": "Fire arc +7°\nCharge 1 additional shell in your shotgun",
+			"n": 3,
+			"pwe": 6,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 3
+		},
+
+		"Royal Loafers": {
+			"text": "Strafe mode: Right click a target and fire on your next move",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [
+				"Unjust Decree",
+				"Kingly Alms",
+				"Engraved Scope",
+				"Sawed-off Justice"
+			],
+			"color": "black",
+			"img_id": 4
+		},
+
+		"Majestic Censer":
+		{
+			"text": "+1 ammo max\nAdd 1 extra soul slot",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 5
+		},
+
+		"Sacred Crown":
+		{
+			"text": "You can play an extra turn after using a soul card move",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 6
+		},
+
+		"Blunderbuss":
+		{
+			"text": "+2 firepower\nFire arc +30°",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 7
+		},
+
+		"Engraved Scope":
+		{
+			"text": "Right Click: Arc -45° and range +1. Resets on each move or reload",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [
+				"Unjust Decree",
+				"Kingly Alms",
+				"Royal Loafers"
+			],
+			"color": "black",
+			"img_id": 8
+		},
+
+		"Holy Gunpowder":
+		{
+			"text": "+1 firepower",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 9
+		},
+
+		"Ritual Dagger":
+		{
+			"text": "Blade: +1\nKing: -2hp\n-1 fire range",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 10
+		},
+
+		"August Presence":
+		{
+			"text": "Non-king pieces can't come near your king",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 11
+		},
+
+		"Crow's Blessing":
+		{
+			"text": "+2 fire range",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 12
+		},
+
+		"Wand of Downpour":
+		{
+			"text": "Deal 10 damage on random enemies",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 13
+		},
+
+		"Wand of Frenzy":
+		{
+			"text": "Refill your ammo and reload your gun",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 14
+		},
+
+		"Wand of Wrath":
+		{
+			"text": "Deal firepower damage to a non-king target",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 15
+		},
+
+		"Wand of Wings":
+		{
+			"text": "Move up to 3 squares in any direction",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 16
+		},
+
+		"The Moat":
+		{
+			"text": "Non-knight pieces can't cross the moat in one move",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 17
+		},
+
+		"Gradual Absolution":
+		{
+			"text": "+1 firepower for every empty soul slot",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {
+				"soul": 2
+			},
+			"exclude": [],
+			"color": "black",
+			"img_id": 18
+		},
+
+		"Taunting Hop":
+		{
+			"text": "Once per turn, you can jump over a nearby piece for 1 dmg without ending the turn",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 19
+		},
+
+		"Wand of Gust":
+		{
+			"text": "Repel all white pieces northward",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 20
+		},
+
+		"Unfaithful Steed":
+		{
+			"text": "Move range: +1\nFlip card if there's no knight on the board",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 21
+		},
+
+		"Unjust Decree":
+		{
+			"text": "-1 firepower\nKing is allowed to right click to fire all loaded shells",
+			"n": 1,
+			"pwe": 2,
+			"need_card": [],
+			"need_other": {
+				"chamber_max": 2
+			},
+			"exclude": [
+				"Royal Loafers",
+				"Kingly Alms",
+				"Engraved Scope"
+			],
+			"color": "black",
+			"img_id": 22
+		},
+
+		"Kingly Alms":
+		{
+			"text": "+2 grenade(s)\nRight click to throw a grenade",
+			"n": 3,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [
+				"Unjust Decree",
+				"Royal Loafers",
+				"Engraved Scope"
+			],
+			"color": "black",
+			"img_id": 23
+		},
+
+		"Subtle Poison":
+		{
+			"text": "King: -1 hp\nQueen's move limit: 1 square for 15 turns\nQueen: -1 hp",
+			"n": 1,
+			"pwe": 2,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 24
+		},
+
+		"Kingdom Wealth":
+		{
+			"text": "+6 ammo max\nKing: +2 hp",
+			"n": 1,
+			"pwe": 3,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 25
+		},
+
+		"Small Fry Harvest":
+		{
+			"text": "+1 ammo max\nGain 1 ammo each time you kill a pawn",
+			"n": 2,
+			"pwe": 2,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 26
+		},
+
+		"A Piercing Truth":
+		{
+			"text": "Your bullets have 30% chance to pierce through targets",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 27
+		},
+
+		"Black Mist":
+		{
+			"text": "-1 fire range\nProtects from death once per floor",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 28
+		},
+
+		"King's Shoulders":
+		{
+			"text": "Once per floor, drag a nearby piece on your king and throw it in any direction",
+			"n": 1,
+			"pwe": 2,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 29
+		},
+
+		"High Focus":
+		{
+			"text": "Fire arc -18°\n+1 firepower\nFlip card if a piece is adjacent to you",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 30
+		},
+
+		"Courteous Jousting":
+		{
+			"text": "Fire arc -10°\nPlay an extra turn when you kill a knight",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 31
+		},
+
+		"Cornered Despot":
+		{
+			"text": "+2 firepower\nFlip card if your king is not on the board's edge",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 32
+		},
+
+		"Sawed-off Justice":
+		{
+			"text": "Shooting moves you backwards\n-1 fire range\n+2 firepower",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": ["Royal Loafers"],
+			"color": "black",
+			"img_id": 33
+		},
+
+		"Welcome Gift":
+		{
+			"text": "+4 firepower\nFlip card if your shotgun has been reloaded",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 34
+		},
+
+		"Cannon Fodder":
+		{
+			"text": "Use pawn's souls to gain +2 firepower on your next shot",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 35
+		},
+
+		"Possessed":
+		{
+			"text": "Add 1 Bishop\nAdd 2 extra soul slots",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [
+				"Conclave",
+				"Unholy Call"
+			],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 36
+		},
+
+		"Philanthropy":
+		{
+			"text": "+1 grenade(s)\nOnce per turn throw a grenade without ending your turn.",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {
+				"grenade": 1
+			},
+			"exclude": [],
+			"color": "black",
+			"img_id": 37
+		},
+
+		"Imperial Shotput":
+		{
+			"text": "-1 ammo max\nAdd 1 cannonball to the chessboard.\n Cannonballs can be grabbed and thrown at pieces",
+			"n": 3,
+			"pwe": 4,
+			"need_card": ["King's Shoulders"],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 38
+		},
+
+		"Egotic Maelstrom":
+		{
+			"text": " Every 10 turns: +1 firepower",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 39
+		},
+
+		"Church Organ":
+		{
+			"text": "+2 ammo max\nCharge 2 additional shells in your shotgun",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Cathedral"],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 40
+		},
+
+		"Black Plague":
+		{
+			"text": "-1 fire range\nAt the end of each turn a random piece takes 1 dmg",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Ravenous Rats", "Crow's Blessing"],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 41
+		},
+
+		"Ravenous Rats":
+		{
+			"text": "When you kill a piece, a rat bites the nearest target for 1 dmg",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 42
+		},
+
+		"Deep Water":
+		{
+			"text": "Non-knight pieces within the moat can't attack you",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["The Moat"],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 43
+		},
+
+		"Unholy Call":
+		{
+			"text": "Add 3 pentagrams on the board. Trigger one to get an extra turn. Trigger all to get +2 firepower.",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 44
+		},
+
+		"Undercover Mission":
+		{
+			"text": "When you reach the waypoint choose a disruption effect and play an extra turn",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 45
+		},
+
+		"Caltrops":
+		{
+			"text": "Injured pieces lose 2 speed\nSlows down white and black backup cards by -50%",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 46
+		},
+
+		"Nightbane":
+		{
+			"text": "Blade: +3",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 47
+		},
+
+		"Bushido":
+		{
+			"text": "-1 firepower\nOnce per turn, execute a piece with your blade without ending your turn.\nBlade +2",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 48
+		},
+
+		"Bloodless Coups":
+		{
+			"text": "Pawns can't attack you\nFlip this card if a pawn is killed",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": ["Militia"],
+			"color": "black",
+			"img_id": 49
+		},
+
+		"Wand of Hypnosis":
+		{
+			"text": "Play a white piece of your choice",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 50
+		},
+
+		"Presbyopia":
+		{
+			"text": "Bishop can't attack you at less than 2 range\nQueen can't attack you at less than 2 range.",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Golden Aging"],
+			"need_other": {"Queen": 1, "King": 1},
+			"exclude": [],
+			"color": "black",
+			"img_id": 51
+		},
+
+		"Golden Aging":
+		{
+			"text": "Every 10 turns:\nQueen: -1 speed\nKing: -1 speed",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 52
+		},
+
+		"Fool Companion":
+		{
+			"text": "Jesters can move in all directions and always follow King. Earn an extra turn when you kill a jester",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["The Jester"],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 53
+		},
+
+		"Force-feeding":
+		{
+			"text": "+1 ammo max\nreloading without moving lets you squeeze one more shell in the shotgun when it's full",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "black",
+			"img_id": 54
+		},
+
+		"Backups":
+		{
+			"text": "Add 3 pawns",
+			"n": 3,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 60
+		},
+
+		"Cavalry":
+		{
+			"text": "Add 2 knights after 15 turns",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 61
+		},
+
+		"Conclave":
+		{
+			"text": "Add 2 bishops after 15 turns",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 62
+		},
+
+		"Entitle":
+		{
+			"text": "Remove 1 pawn\nAdd 1 knight\n-1 ammo max",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 63
+		},
+
+		"Cardinal":
+		{
+			"text": "Remove 1 pawn\nAdd 1 bishop\n-1 ammo max",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 64
+		},
+
+		"Remparts":
+		{
+			"text": "Remove 2 pawns\nAdd 1 rook",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 2},
+			"exclude": [],
+			"color": "white",
+			"img_id": 65
+		},
+
+		"Pillage":
+		{
+			"text": "Remove 1 rook\nAdd 5 pawns\nPawn: +1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Rook": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 66
+		},
+
+		"Crusades":
+		{
+			"text": "Remove 1 bishop\nAdd 2 knights",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Bishop": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 67
+		},
+
+		"Peace":
+		{
+			"text": "Remove 1 knight\nAdd 2 bishops",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Knight": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 68
+		},
+
+		"King's Mistress":
+		{
+			"text": "Add 1 queen\nQueen's moves are limited to 3 squares",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Queen": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 69
+		},
+
+		"Revolution":
+		{
+			"text": "Remove 1 bishop\nAdd 6 pawns",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Bishop": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 70
+		},
+
+		"Bodyguard":
+		{
+			"text": "King can't be killed if a knight is alive\nKnight: +1hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Leader": 1, "Knight": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 71
+		},
+
+		"Ruins":
+		{
+			"text": "Add 2 pawns\nAdd 1 rook\nRook -2hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 72
+		},
+
+		"Assault":
+		{
+			"text": "Add 1 pawn\npawns can walk 2 squares on their first move",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 5},
+			"exclude": [],
+			"color": "white",
+			"img_id": 73
+		},
+
+		"Kite Shield":
+		{
+			"text": "Add 1 pawn\nknights have a shield that absorbs all incoming damage on a single turn",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Knight": 2},
+			"exclude": [],
+			"color": "white",
+			"img_id": 74
+		},
+
+		"Zealots":
+		{
+			"text": "Pawn: +1 speed\nBishop: +1 speed\nFlip card if there's no bishop on the board",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Bishop": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 75
+		},
+
+		"Militia":
+		{
+			"text": "Add 1 pawn\npawns can move/attack in 4 directions",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 3},
+			"exclude": ["Bloodless Coups"],
+			"color": "white",
+			"img_id": 76
+		},
+
+		"Ammunition Depot":
+		{
+			"text": "Add 1 rook\nGain 2 ammo each time you kill a rook",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 77
+		},
+
+		"Scouting":
+		{
+			"text": "Remove 1 knight\nAdd 2 pawns\nPawn: +1 speed",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Knight": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 78
+		},
+
+		"Pikemen":
+		{
+			"text": "pawns can't attack diagonally but they can attack the front two squares instead\nPawn: +1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 2},
+			"exclude": [],
+			"color": "white",
+			"img_id": 79
+		},
+
+		"Ascension":
+		{
+			"text": "Bishops can move and attack across any obstacles",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Bishop": 2},
+			"exclude": [],
+			"color": "white",
+			"img_id": 80
+		},
+
+		"Castle":
+		{
+			"text": "Rook: +1 hp\nKing swaps position with a rook whenever he would take damage",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Rook": 1, "Leader": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 81
+		},
+
+		"Conscription":
+		{
+			"text": "Add 1 pawn every 5 turns",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 82
+		},
+
+		"Theocracy":
+		{
+			"text": "Remove 1 king\nadd 1 bishop\nWin if all bishops are dead\nBishop: +2 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"King": 1},
+			"exclude": [
+				"Throne Room",
+				"Ritual Dagger"
+			],
+			"color": "white",
+			"img_id": 83
+		},
+
+		"Iron Maiden":
+		{
+			"text": "Queen: -2 speed\nqueens can't die",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Queen": 1},
+			"exclude": ["Guillotine"],
+			"color": "white",
+			"img_id": 85
+		},
+
+		"Court of the King":
+		{
+			"text": "Add 2 knights\nAdd 1 bishop\nAdd 1 rook\nall pieces: -1 speed",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 86
+		},
+
+		"The Red Book":
+		{
+			"text": "Add 1 bishop\nBishops can move (not attack) orthogonally",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 87
+		},
+
+		"Saboteur":
+		{
+			"text": "Remove 2 pawns\nAdd 1 bishop\nDoubles fire arc for 1 bullet",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 2},
+			"exclude": [],
+			"color": "white",
+			"img_id": 88
+		},
+
+		"Homecoming":
+		{
+			"text": "Add 1 Queen",
+			"n": 1,
+			"pwe": 0,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 89
+		},
+
+		"Lookout Tower":
+		{
+			"text": "Add 1 rook after 20 turns\nWhite backups come 1 turn sooner for every piece you kill",
+			"n": 2,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 90
+		},
+
+		"Throne Room":
+		{
+			"text": "King: +2 hp\nQueen: +1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"King": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 91
+		},
+
+		"Secret Heir":
+		{
+			"text": "Add 1 pawn\nthe secret heir replaces the king if he dies",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": ["Guillotine"],
+			"color": "white",
+			"img_id": 92
+		},
+
+		"Genderqueer":
+		{
+			"text": "Remove 1 bishop\nAdd 1 queen after 10 turns",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 93
+		},
+
+		"Karma":
+		{
+			"text": "-1 firepower on white squares\n+30 fire arc on black squares",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 94
+		},
+
+		"Undead Armies":
+		{
+			"text": "Pawn: -1 hp Replace rooks, knights and bishops with a pawn after they die",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 95
+		},
+
+		"Shortage":
+		{
+			"text": "Remove 1 pawn\n-3 ammo max\n-1 grenade(s)",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 96
+		},
+
+		"Succubus":
+		{
+			"text": "Add 1 queen\nAdd 1 extra soul slot",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 97
+		},
+
+		"Bunker":
+		{
+			"text": "Remove 1 rook\nKing: +1 hp\n-1 grenade damage\nPawns: +1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 3, "Grenade": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 98
+		},
+
+		"Sanctity":
+		{
+			"text": "Add 1 bishop\nBishop's souls can't be reaped",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Conclave"],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 99
+		},
+
+		"Knightmare":
+		{
+			"text": "Add 1 knight\nKnight can only be hit when moving\nKnight: -1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Black Mist"],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 100
+		},
+
+		"Highest Dungeon":
+		{
+			"text": "All pieces: +1 hp\nFlip card if there's no rook on the board",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Remparts"],
+			"need_other": {"Rook": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 101
+		},
+
+		"Cathedral":
+		{
+			"text": "Remove 1 bishop\n Add 1 rook\nNon-rook pieces near a rook can't take more than one damage per turn",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Cardinal"],
+			"need_other": {"Bishop": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 102
+		},
+
+		"The Bridge":
+		{
+			"text": "Add 1 knight after 10 turns\nOpen a path in the moat",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["The Moat"],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 103
+		},
+
+		"Divine Healing":
+		{
+			"text": "Bishop: +1 hp\nBishops can heal nearby allies instead of moving",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Bishop": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 104
+		},
+
+		"Last Guardian":
+		{
+			"text": "After killing a pawn, promote another pawn if it's the last one",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Pawn": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 105
+		},
+
+		"Trowel":
+		{
+			"text": "Rook +4 hp\nFlip card if there's no pawn on the board",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Rook": 1, "Pawn": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 106
+		},
+
+		"Full Plate Armor":
+		{
+			"text": "All pieces: -1 speed\nBlade: -1 \nAll pieces: +1 hp",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 107
+		},
+
+		"Military Academy":
+		{
+			"text": "Add 1 knight every 10 turns",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 108
+		},
+
+		"Witch's Curse":
+		{
+			"text": "Fire arc +10°\n-1 fire range\nFlip this card if a queen is killed\n-1 Firepower",
+			"n": 1,
+			"pwe": 4,
+			"need_card": [],
+			"need_other": {"Queen": 1},
+			"exclude": [],
+			"color": "white",
+			"img_id": 109
+		},
+
+		"Saddle":
+		{
+			"text": "Knight: -1 speed\nKnight carry non-rook and non-knight pieces when moving",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Cavalry"],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 110
+		},
+
+		"The Jester":
+		{
+			"text": "Add 1 pawn\nJesters can move diagonally and have +2 speed\nJesters pass the hat when he dies",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Throne Room"],
+			"need_other": {"Pawn": 1},
+			"exclude": ["Theocracy"],
+			"color": "white",
+			"img_id": 111
+		},
+
+		"Guillotine":
+		{
+			"text": "Remove 1 king",
+			"n": 1,
+			"pwe": 4,
+			"need_card": ["Revolution"],
+			"need_other": {},
+			"exclude": [
+				"Iron Maiden",
+				"The Secret Heir"
+			],
+			"color": "white",
+			"img_id": 112
+		},
+
+		"Analysis Paralysis":
+		{
+			"text": "You can't play for 6 turns or until you are in check",
+			"n": 2,
+			"pwe": 4,
+			"need_card": ["High Focus"],
+			"need_other": {},
+			"exclude": [],
+			"color": "white",
+			"img_id": 113
+		}
+	},
+	"weapons": {
+		"Solomon":
+		{
+			"chamber_max": 2,
+			"firepower": 4,
+			"firerange": 3,
+			"spread": 55,
+			"ammo_max": 6,
+			"special_abilities": {}
+		},
+		"Victoria":
+		{
+			"chamber_max": 1,
+			"firepower": 5,
+			"firerange": 4,
+			"spread": 45,
+			"ammo_max": 3,
+			"special_abilities": {}
+		},
+		"Ramesses II":
+		{
+			"chamber_max": 2,
+			"firepower": 4,
+			"firerange": 3,
+			"spread": 65,
+			"ammo_max": 5,
+			"special_abilities": {"knockback": 50}
+		},
+		"Richard III":
+		{
+			"chamber_max": 3,
+			"firepower": 3,
+			"firerange": 4,
+			"spread": 75,
+			"ammo_max": 9,
+			"special_abilities": {}
+		},
+		"Makeda":
+		{
+			"chamber_max": 2,
+			"firepower": 3,
+			"firerange": 3,
+			"spread": 50,
+			"ammo_max": 6,
+			"special_abilities": {"blade": 2}
+		}
+	},
+	"achievements": {
+		
+	}
+}
